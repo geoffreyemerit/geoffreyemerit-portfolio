@@ -1,11 +1,26 @@
+/* eslint-disable import/no-unresolved */
 import "./App.css";
+import React from "react";
+import { HashRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import AboutMe from "./components/About_Me";
+import Skills from "./components/Skills";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+
 function App() {
   return (
-    <div className="flex items-center justify-center w-screen h-screen text-xl text-white bg-slate-500 text-shadow-md">
-      <p>
-        Ce template est bien configuré pour vos applications front-end avec Vite
-        et Tailwind
-      </p>
+    <div className="App">
+      <HashRouter>
+        <Routes>
+          <Route path="*" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about_me" element={<AboutMe />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </HashRouter>
     </div>
   );
 }

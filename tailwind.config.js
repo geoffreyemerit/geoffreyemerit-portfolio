@@ -4,10 +4,16 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        carnivor: "url('./assets/carnivor.jpg')",
-        herbivor: "url('./assets/herbivor.jpg.webp')",
-        aquatic:
-          "url('https://www.sciencenewsforstudents.org/wp-content/uploads/2019/11/860-header-non-dinos2.jpg')",
+        home: "url('./assets/images/bg-home.png')",
+        aboutme: "url('./assets/images/bg-aboutme.png')",
+        skills: "url('./assets/images/bg-skills.png')",
+        portfolio: "url('./assets/images/bg-portfolio.png')",
+        contact: "url('./assets/images/bg-contact.png')",
+      },
+      colors: {
+        ylw: "#FBC74B",
+        blck: "#171717",
+        wht: "#E8E8E8",
       },
     },
   },
