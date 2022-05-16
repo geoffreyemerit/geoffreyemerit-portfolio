@@ -1,26 +1,27 @@
 /* eslint-disable import/no-unresolved */
 import "./App.css";
 import React from "react";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
-import AboutMe from "./components/About_Me";
+import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
   return (
     <div className="App">
-      <HashRouter>
+      <Router>
         <Routes>
-          <Route path="*" element={<Home />} />
+          <Route path="*" element={<LandingPage />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/about_me" element={<AboutMe />} />
+          <Route path="/aboutme" element={<AboutMe />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-      </HashRouter>
+      </Router>
     </div>
   );
 }

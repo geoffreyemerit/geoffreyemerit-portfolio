@@ -15,4 +15,37 @@
   .text-shadow-none {
     text-shadow: none;
   }
+  .landingPage {
+    @apply bg-no-repeat bg-cover bg-landingPage;
+  }
+  .homeBlack {
+    @apply bg-repeat bg-cover bg-homeBlack;
+  }
+  .homeWhite {
+    @apply bg-repeat bg-cover bg-homeWhite;
+  }
+  .aboutMeBlack {
+    @apply bg-repeat bg-cover bg-aboutMeBlack;
+  }
+  .aboutMeWhite {
+    @apply bg-repeat bg-cover bg-aboutMeWhite;
+  }
+  .skillsBlack {
+    @apply bg-repeat bg-cover bg-skillsBlack;
+  }
+  .skillsWhite {
+    @apply bg-repeat bg-cover bg-skillsWhite;
+  }
+  .portfolioBlack {
+    @apply bg-repeat bg-cover bg-portfolioBlack;
+  }
+  .portfolioWhite {
+    @apply bg-repeat bg-cover bg-portfolioWhite;
+  }
+  .contactBlack {
+    @apply bg-repeat bg-cover bg-contactBlack;
+  }
+  .contactWhite {
+    @apply bg-repeat bg-cover bg-contactWhite;
+  }
 }

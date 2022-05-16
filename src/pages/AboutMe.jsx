@@ -1,9 +1,10 @@
 import React from "react";
+import AboutMeList from "../components/AboutMeList";
 
 const AboutMe = () => {
   return (
     <div>
-      <h1>About Me</h1>
+      <AboutMeList />
     </div>
   );
 };
