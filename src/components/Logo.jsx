@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Icons from "../../public/assets/global/logos.svg";
+import Icons from "../../public/assets/social/socialLogos.svg";
 
 const Logo = ({ id, myStyle }) => {
   // ------------------------------------------
@@ -15,7 +15,7 @@ const Logo = ({ id, myStyle }) => {
 
 Logo.propTypes = {
   myStyle: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default Logo;
