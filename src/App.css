@@ -4,7 +4,7 @@
 
 @layer utilities {
   .text-shadow {
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 4px 3px 4px black;
   }
   .text-shadow-md {
     text-shadow: 4px 4px 8px black;
@@ -15,37 +15,40 @@
   .text-shadow-none {
     text-shadow: none;
   }
-  .landingPage {
-    @apply bg-no-repeat bg-cover bg-landingPage;
+  .landingBlack {
+    @apply bg-no-repeat bg-cover bg-landingBlack;
+  }
+  .landingWhite {
+    @apply bg-no-repeat bg-cover bg-landingWhite;
   }
   .homeBlack {
-    @apply bg-repeat bg-cover bg-homeBlack;
+    @apply bg-no-repeat bg-cover bg-homeBlack;
   }
   .homeWhite {
-    @apply bg-repeat bg-cover bg-homeWhite;
+    @apply bg-no-repeat bg-cover bg-homeWhite;
   }
   .aboutMeBlack {
-    @apply bg-repeat bg-cover bg-aboutMeBlack;
+    @apply bg-no-repeat bg-cover bg-aboutMeBlack;
   }
   .aboutMeWhite {
-    @apply bg-repeat bg-cover bg-aboutMeWhite;
+    @apply bg-no-repeat bg-cover bg-aboutMeWhite;
   }
   .skillsBlack {
-    @apply bg-repeat bg-cover bg-skillsBlack;
+    @apply bg-no-repeat bg-cover bg-skillsBlack;
   }
   .skillsWhite {
-    @apply bg-repeat bg-cover bg-skillsWhite;
+    @apply bg-no-repeat bg-cover bg-skillsWhite;
   }
   .portfolioBlack {
-    @apply bg-repeat bg-cover bg-portfolioBlack;
+    @apply bg-no-repeat bg-cover bg-portfolioBlack;
   }
   .portfolioWhite {
-    @apply bg-repeat bg-cover bg-portfolioWhite;
+    @apply bg-no-repeat bg-cover bg-portfolioWhite;
   }
   .contactBlack {
-    @apply bg-repeat bg-cover bg-contactBlack;
+    @apply bg-no-repeat bg-cover bg-contactBlack;
   }
   .contactWhite {
-    @apply bg-repeat bg-cover bg-contactWhite;
+    @apply bg-no-repeat bg-cover bg-contactWhite;
   }
 }
