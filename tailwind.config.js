@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        landingPage: "url('./assets/backgrounds/0-bg-landingPage.jpg')",
+        landingBlack: "url('./assets/backgrounds/bg-landing-blackk.jpg')",
+        landingWhite: "url('./assets/backgrounds/bg-landing-whitee.jpg')",
         homeBlack: "url('./assets/backgrounds/bg-home-black.png')",
         homeWhite: "url('./assets/backgrounds/bg-home-white.png')",
         aboutMeBlack: "url('./assets/backgrounds/bg-aboutme-black.png')",
@@ -17,9 +18,9 @@ module.exports = {
         contactWhite: "url('./assets/backgrounds/bg-contact-white.png')",
       },
       colors: {
-        ylw: "#FBC74B",
-        blck: "#171717",
-        wht: "#E8E8E8",
+        primary: "#0A0B0A",
+        secondary: "#FFF",
+        tertiary: "#FBC74B",
       },
     },
   },

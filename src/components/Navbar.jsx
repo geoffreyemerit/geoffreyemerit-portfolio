@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpened, setIsOpened] = useState(false);
 
   return (
-    <header className="w-full mb-4 shadow-sm text-wht bg-blck">
+    <header className="w-full mb-4 shadow-sm bg-primary text-secondary">
       {/* :DESKTOP MENU */}
       <div className="flex items-center justify-between px-5 mx-auto py-7">
         {/* >> Site logo and Name */}
@@ -16,7 +16,7 @@ const Navbar = () => {
             <img
               src="./assets/global/logo.png"
               alt="logo-geoffreyemerit"
-              className="flex w-10 h-10 bg-ylw md:mb-0"
+              className="flex w-10 h-10 bg-tertiary md:mb-0"
             />
             <span className="flex flex-col ml-3 text-sm font-semibold">
               Geoffrey Emerit
@@ -29,7 +29,7 @@ const Navbar = () => {
           <ul className="flex">
             {navLinks.map((link) => (
               <NavLink key={link.id} to={link.path}>
-                <li className="mr-10 hover:text-ylw">{link.title}</li>
+                <li className="mr-10 hover:text-tertiary">{link.title}</li>
               </NavLink>
             ))}
           </ul>
@@ -42,7 +42,7 @@ const Navbar = () => {
           onClick={() => setIsOpened(!isOpened)}
         >
           <Logo
-            myStyle="w-10 h-10 text-wht"
+            myStyle="w-10 h-10 text-secondary"
             name="logos-menu-burger"
             id="logos-menu-burger"
           />
@@ -51,7 +51,7 @@ const Navbar = () => {
 
       {/* :MOBILE MENU */}
       {isOpened && (
-        <div className="flex flex-col w-full px-3 py-4 text-base font-semibold text-center uppercase bg-blck md:hidden">
+        <div className="flex flex-col w-full px-3 py-4 text-base font-semibold text-center uppercase bg-primary md:hidden">
           <ul>
             {navLinks.map((link) => (
               <NavLink key={link.id} to={link.path}>
