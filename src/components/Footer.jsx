@@ -4,22 +4,22 @@ import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <footer class="flex flex-col p-4  text-secondary bg-primary sm:flex-row sm:items-center">
+    <footer className="flex flex-col p-4 text-secondary bg-primary sm:flex-row sm:items-center">
       {/* :FOOTER */}
       {/* >> Social Networks */}
-      <ul className="flex flex-wrap sm:w-2/3">
-        {footLinks.map((link, index) => (
-          <a key={index} href={link.href} target={link.target}>
-            <li className="m-4 ">
+      <ul className="flex flex-wrap justify-between w-full">
+        {footLinks.map((link) => (
+          <a key={link.id} href={link.href} target={link.target}>
+            <li className="m-2 sm:m-4">
               <Logo myStyle="w-6 h-6" name={link.name} id={link.id} />
             </li>
           </a>
         ))}
+        {/* >> Copyright */}
+        <li className="flex items-center m-2 text-base sm:m-4">
+          &copy; Geoffrey Emerit
+        </li>
       </ul>
-      {/* >> Copyright */}
-      <span className="flex justify-end text-base sm:w-1/3">
-        &copy; Geoffrey Emerit
-      </span>
     </footer>
   );
 };

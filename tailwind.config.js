@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        landingBlack: "url('./assets/backgrounds/bg-landing-blackk.jpg')",
-        landingWhite: "url('./assets/backgrounds/bg-landing-whitee.jpg')",
+        landingBlack: "url('./assets/backgrounds/bg-landing-black.jpeg')",
+        landingWhite: "url('./assets/backgrounds/bg-landing-white.jpeg')",
         homeBlack: "url('./assets/backgrounds/bg-home-black.png')",
         homeWhite: "url('./assets/backgrounds/bg-home-white.png')",
         aboutMeBlack: "url('./assets/backgrounds/bg-aboutme-black.png')",
