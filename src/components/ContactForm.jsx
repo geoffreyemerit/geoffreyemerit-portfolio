@@ -2,8 +2,10 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div>
-      <h1>Form</h1>
+    <div className="flex flex-col items-center">
+      <h1 className="flex items-center justify-center cursor-pointer title">
+        Contact
+      </h1>
     </div>
   );
 };

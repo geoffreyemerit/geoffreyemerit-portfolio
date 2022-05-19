@@ -3,8 +3,11 @@ import PortfolioCard from "./PortfolioCard";
 
 const PortfolioList = () => {
   return (
-    <div>
-      <h1>List</h1>
+    <div className="flex flex-col items-center">
+      <h1 className="flex items-center justify-center cursor-pointer title">
+        Projets
+      </h1>
+
       <PortfolioCard />
     </div>
   );

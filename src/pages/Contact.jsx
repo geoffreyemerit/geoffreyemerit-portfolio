@@ -1,12 +1,14 @@
 import React from "react";
 import ContactForm from "../components/ContactForm";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="w-screen h-screen contactBlack dark:contactWhite">
       <Navbar />
       <ContactForm />
+      <Footer />
     </div>
   );
 };

@@ -19,10 +19,7 @@ const HomePage = () => {
       </div>
       {/* >> Button + Link */}
       <Link to="/aboutme">
-        <button
-          type="button"
-          className="w-52 h-14 mb-20 text-shadow text-lg tracking-[0.2rem] uppercase border-2 rounded cursor-pointer border-tertiary text-tertiary bg-primary bg-opacity-50 lg:hover:bg-tertiary lg:hover:bg-opacity-30"
-        >
+        <button type="button" className="cursor-pointer title">
           En savoir plus
         </button>
       </Link>
