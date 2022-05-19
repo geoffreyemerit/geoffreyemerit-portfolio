@@ -1,12 +1,14 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import SkillsCard from "../components/SkillsCard";
+import SkillsList from "../components/SkillsList";
 
 const Skills = () => {
   return (
-    <div>
+    <div className="w-screen h-screen skillsBlack dark:skillsWhite">
       <Navbar />
-      <SkillsCard />
+      <SkillsList />
+      <Footer />
     </div>
   );
 };

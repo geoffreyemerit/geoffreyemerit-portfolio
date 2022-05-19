@@ -4,7 +4,7 @@ import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col p-4 text-secondary bg-primary sm:flex-row sm:items-center">
+    <footer className="flex flex-col p-4 bg-opacity-30 text-secondary bg-primary sm:flex-row sm:items-center dark:text-primary dark:bg-secondary dark:bg-opacity-30">
       {/* :FOOTER */}
       {/* >> Social Networks */}
       <ul className="flex flex-wrap justify-between w-full">

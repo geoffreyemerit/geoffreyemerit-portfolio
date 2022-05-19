@@ -3,8 +3,10 @@ import AboutMeCard from "./AboutMeCard";
 
 const AboutMeList = () => {
   return (
-    <div>
-      <h1>LIST CAAARD</h1>
+    <div className="flex flex-col items-center">
+      <h1 className="flex items-center justify-center cursor-pointer title">
+        Qui suis-je ?
+      </h1>
 
       <AboutMeCard />
     </div>
