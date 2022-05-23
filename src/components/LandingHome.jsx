@@ -32,7 +32,7 @@ const LandingHome = () => {
           <Link to="/home">
             <button
               type="button"
-              className="w-52 h-14 text-shadow text-xl tracking-[0.5rem] uppercase border-2 rounded cursor-pointer border-primary text-secondary bg-primary bg-opacity-50 lg:hover:bg-opacity-80"
+              className="hover:scale-[1.02] w-52 h-14 text-shadow text-xl tracking-[0.5rem] uppercase border-2 rounded cursor-pointer border-primary text-secondary bg-primary bg-opacity-50 lg:hover:bg-opacity-80"
             >
               Noir
             </button>
@@ -45,7 +45,7 @@ const LandingHome = () => {
           <Link to="/home">
             <button
               type="button"
-              className="tracking-[0.5rem] w-52 h-14 text-xl uppercase border-2 rounded cursor-pointer border-secondary text-primary bg-secondary bg-opacity-50 lg:hover:bg-opacity-80"
+              className="hover:scale-[1.02] tracking-[0.5rem] w-52 h-14 text-xl uppercase border-2 rounded cursor-pointer border-secondary text-primary bg-secondary bg-opacity-50 lg:hover:bg-opacity-80"
             >
               Blanc
             </button>
