@@ -9,7 +9,7 @@ module.exports = {
         landingWhite: "url('./assets/backgrounds/bg-landing-white.jpeg')",
         homeBlack: "url('./assets/backgrounds/bg-home-black.png')",
         homeWhite: "url('./assets/backgrounds/bg-home-white.png')",
-        aboutMeBlack: "url('./assets/backgrounds/bg-aboutme-black.jpeg')",
+        aboutMeBlack: "url('./assets/backgrounds/bg-aboutme-black.jpg')",
         aboutMeWhite: "url('./assets/backgrounds/bg-aboutme-white.jpeg')",
         skillsBlack: "url('./assets/backgrounds/bg-skills-black.jpg')",
         skillsWhite: "url('./assets/backgrounds/bg-skills-white.jpeg')",
