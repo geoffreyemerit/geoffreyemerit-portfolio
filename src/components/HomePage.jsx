@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <div className="flex flex-col items-center">
       {/* :HOME PAGE */}
-      <div className="flex flex-col mt-20 mb-10 w-[90%] tracking-[0.2rem]">
+      <div className="flex font-raleway flex-col mt-20 mb-10 w-[90%] tracking-[0.2rem]">
         {/* >> Title */}
         <h1 className="flex flex-col items-center justify-center text-3xl font-semibold text-center text-shadow text-secondary sm:text-[2.5rem] md:flex-row lg:text-[3rem] dark:text-primary">
           Bonjour, je suis

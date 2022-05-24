@@ -1,9 +1,15 @@
 module.exports = {
   content: ["./src/**/*.{html,jsx}"],
   // ...
-  darkMode: "media" /*class */,
+  darkMode: "'media','class'",
   theme: {
     extend: {
+      fontFamily: {
+        montserrat: "'Montserrat', 'sans-serif'",
+        raleway: "'Raleway', 'sans-serif'",
+        starjedi: "Starjedi",
+        galactic: "Galactic Basic",
+      },
       backgroundImage: {
         landingBlack: "url('./assets/backgrounds/bg-landing-black.jpeg')",
         landingWhite: "url('./assets/backgrounds/bg-landing-white.jpeg')",

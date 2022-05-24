@@ -9,7 +9,7 @@ const ContactForm = () => {
         Contact
       </h1>
       {/* :FORM */}
-      <p className="flex justify-center w-[90%] mt-8 italic text-center order 1 text-tertiary">
+      <p className="font-raleway flex justify-center w-[90%] mt-8 italic text-center order 1 text-tertiary">
         Vous avez une question ou vous souhaitez que l&apos;on travaille
         ensemble ?
       </p>
@@ -33,7 +33,7 @@ const ContactForm = () => {
               />
               <label
                 htmlFor="floating_Name"
-                className=" ml-3 absolute text-sm text-secondary dark:text-primary font-orb duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-tertiary dark:peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
+                className="font-montserrat ml-3 absolute text-sm text-secondary dark:text-primary font-orb duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-tertiary dark:peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
               >
                 NOM*
               </label>
@@ -50,7 +50,7 @@ const ContactForm = () => {
               />
               <label
                 htmlFor="floating_email"
-                className=" ml-3 absolute text-sm text-secondary dark:text-primary font-orb duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-tertiary dark:peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
+                className="font-montserrat ml-3 absolute text-sm text-secondary dark:text-primary font-orb duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-tertiary dark:peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
               >
                 EMAIL*
               </label>
@@ -68,7 +68,7 @@ const ContactForm = () => {
               />
               <label
                 htmlFor="floating_number"
-                className=" ml-3 absolute text-sm text-secondary dark:text-primary font-orb duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-tertiary dark:peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
+                className="font-montserrat ml-3 absolute text-sm text-secondary dark:text-primary font-orb duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-tertiary dark:peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
               >
                 TÉLÉPHONE*
               </label>
@@ -85,7 +85,7 @@ const ContactForm = () => {
               />
               <label
                 htmlFor="floating_message"
-                className=" ml-3 absolute text-sm text-secondary dark:text-primary font-orb duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-tertiary dark:peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
+                className="font-montserrat ml-3 absolute text-sm text-secondary dark:text-primary font-orb duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-tertiary dark:peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
               >
                 MESSAGE*
               </label>
@@ -95,8 +95,8 @@ const ContactForm = () => {
         {/* >> Section Right */}
         <div className="flex justify-center order-3 w-full h-full mt-5 lg:w-2/4 lg:justify-end lg:order-2 lg:pr-5">
           {/* :MAP CONTAINER */}
-          <div className="flex items-start justify-start w-full h-96">
-            <div className="absolute flex-col p-2 m-2 text-sm text-center w-[55%] h-24 bg-primary text-secondary rounded-xl sm:w-[40%] lg:text-xl lg:w-80">
+          <div className="flex w-full h-96">
+            <div className="font-montserrat absolute flex items-center justify-center flex-col p-2 m-2 text-sm text-center w-[55%] h-24 bg-primary text-secondary rounded-xl sm:w-[40%] lg:text-xl lg:w-80">
               <span className="flex flex-col">Geoffrey Emerit</span>
               <span className="flex flex-col">64100 Bayonne</span>
               <span className="flex flex-col">France</span>
@@ -114,7 +114,7 @@ const ContactForm = () => {
           </div>
         </div>
         {/* >> Button Submit */}
-        <div className="flex justify-center order-2 w-full lg:order-3">
+        <div className="flex justify-center order-2 w-full font-montserrat lg:order-3">
           <button
             type="submit"
             className="px-10 m-10 text-center border-4 cursor-pointer font-orb text-secondary dark:text-primary border-y-transparent border-x-tertiary lg:hover:text-tertiary lg:dark:hover:text-primary"
