@@ -20,8 +20,8 @@ const AboutMePage = () => {
             Après plus de 6ans d&apos;immobilier, j&apos;ai décidé de me
             recentrer sur une passion d&apos;enfance ... l&apos;Informatique !
             Le virage à 90° est lancé et je suis actuellement en formation à la
-            Wild Code School.Bientôt en recherche d&apos;un stage dés août 2022,
-            je suis disponible pour échanger à ce sujet.
+            Wild Code School. Bientôt en recherche d&apos;un stage dés août
+            2022, je suis disponible pour échanger à ce sujet.
           </span>
         </div>
         <div className="flex items-center justify-center my-2 w-[90%] h-80 sm:h-full sm:order-1">
