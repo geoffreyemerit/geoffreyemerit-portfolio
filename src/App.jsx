@@ -11,18 +11,16 @@ import LandingPage from "./pages/LandingPage";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Routes>
-          <Route path="*" element={<LandingPage />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/aboutme" element={<AboutMe />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </Router>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="*" element={<LandingPage />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 

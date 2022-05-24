@@ -8,7 +8,7 @@ const aboutMeArray = [
   {
     id: 2,
     name: "En formation",
-    link: "./assets/aboutMe/enformation.jpeg",
+    link: "./assets/aboutMe/enformation.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. In quasi maxime natus. Nulla dolor eos saepe tenetur architecto, quasi a quibusdam pariatur omnis, porro inventore odit nemo accusantium illo maxime.",
   },
   {
@@ -20,7 +20,7 @@ const aboutMeArray = [
   {
     id: 4,
     name: "Sur l'ordinateur",
-    link: "./assets/aboutMe/aubureau.jpeg",
+    link: "./assets/aboutMe/aubureau.jpg",
     desc: "salut, je m'appelle geoffrey et j'ai 28ans. bienvenue dans mon univers",
   },
   {

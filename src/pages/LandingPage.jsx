@@ -2,11 +2,7 @@ import React from "react";
 import LandingHome from "../components/LandingHome";
 
 const LandingPage = () => {
-  return (
-    <div>
-      <LandingHome />
-    </div>
-  );
+  return <LandingHome />;
 };
 
 export default LandingPage;

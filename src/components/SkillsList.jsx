@@ -20,7 +20,7 @@ const SkillsList = () => {
       {/* :SKILLS PAGE */}
       <div className="flex flex-col items-center">
         {/* >> Title */}
-        <h1 className="flex items-center justify-center mt-5 title">
+        <h1 className="flex items-center justify-center mt-5 title sm:mt-0">
           Compétences
         </h1>
       </div>
