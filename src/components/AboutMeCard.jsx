@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const AboutMeCard = ({ link, setSelected, name }) => {
+const AboutMeCard = ({ id, link, name, setSelected }) => {
   return (
     <div
       role="button"
-      onClick={() => setSelected(link)}
-      onKeyDown={() => setSelected(link)}
+      onClick={() => setSelected(id)}
+      onKeyDown={() => setSelected(id)}
       tabIndex="0"
       className="flex items-center justify-center w-[8.5rem] h-[5.5rem] bg-primary bg-opacity-70 rounded-xl hover:brightness-125 lg:w-[11.25rem] lg:h-[7.5rem] dark:bg-secondary dark:bg-opacity-80"
     >
@@ -23,12 +23,14 @@ AboutMeCard.propTypes = {
   link: PropTypes.string,
   name: PropTypes.string,
   setSelected: PropTypes.func,
+  id: PropTypes.number,
 };
 
 AboutMeCard.defaultProps = {
   link: "",
   name: "",
-  setSelected: "",
+  setSelected: () => {},
+  id: 0,
 };
 
 export default AboutMeCard;

@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Monserrat"),
+    url("./assets/fonts/Monserrat-SemiBold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), url("./assets/fonts/Raleway-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Galactic Basic";
+  src: local("Galactic Basic"), url("./assets/fonts/galbasic.ttf") format("ttf");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,7 +37,7 @@
     text-shadow: 4px 3px 4px silver;
   }
   .title {
-    @apply w-40 text-base sm:w-52 h-14 text-shadow-b sm:text-lg tracking-[0.2rem] uppercase border-2 rounded border-tertiary text-tertiary bg-primary bg-opacity-80 dark:text-primary dark:bg-secondary dark:bg-opacity-80 dark:border-primary;
+    @apply font-montserrat w-44 text-base sm:w-52 h-14 text-shadow-b sm:text-lg tracking-[0.2rem] uppercase border-2 rounded border-tertiary text-tertiary bg-primary bg-opacity-80 dark:text-primary dark:bg-secondary dark:bg-opacity-80 dark:border-primary;
   }
   .landingBlack {
     @apply bg-no-repeat bg-cover bg-landingBlack;

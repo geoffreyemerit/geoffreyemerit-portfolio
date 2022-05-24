@@ -16,7 +16,7 @@ const SkillsList = () => {
     slidesToScroll: 1,
   };
   return (
-    <div>
+    <div className="font-montserrat">
       {/* :SKILLS PAGE */}
       <div className="flex flex-col items-center">
         {/* >> Title */}
