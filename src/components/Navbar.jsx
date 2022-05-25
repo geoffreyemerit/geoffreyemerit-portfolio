@@ -42,7 +42,7 @@ const Navbar = () => {
           onClick={() => setIsOpened(!isOpened)}
         >
           <Logo
-            myStyle="w-10 h-10 text-secondary"
+            myStyle="w-10 h-10 text-secondary dark:text-primary"
             name="logos-menu-burger"
             id="logos-menu-burger"
           />
@@ -51,7 +51,7 @@ const Navbar = () => {
 
       {/* :MOBILE MENU */}
       {isOpened && (
-        <div className="flex flex-col w-full px-3 py-4 text-base font-semibold text-center uppercase bg-primary md:hidden">
+        <div className="flex flex-col w-full px-3 py-4 text-base font-semibold text-center uppercase text-secondary bg-primary bg-opacity-70 md:hidden dark:bg-secondary dark:bg-opacity-70 dark:text-primary">
           <ul>
             {navLinks.map((link) => (
               <NavLink key={link.id} to={link.path}>

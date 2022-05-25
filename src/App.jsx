@@ -8,19 +8,22 @@ import Skills from "./pages/Skills";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import LandingPage from "./pages/LandingPage";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="*" element={<LandingPage />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/aboutme" element={<AboutMe />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
+    <ThemeProvider>
+      <Router>
+        <Routes>
+          <Route path="*" element={<LandingPage />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/aboutme" element={<AboutMe />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
 

@@ -15,7 +15,7 @@ const ContactForm = () => {
       </p>
       <form
         autoComplete="none"
-        className="flex flex-col flex-wrap justify-center m-5 rounded-3xl w-[90%] sm:w-[60%] lg:flex-row lg:w-full lg:bg-primary lg:bg-opacity-70"
+        className="flex flex-col flex-wrap justify-center m-5 rounded-3xl w-[90%] sm:w-[60%] lg:flex-row lg:w-[85%] "
       >
         {/* >> Section Left */}
         <div className="flex justify-center w-full mt-5 lg:w-2/4">
@@ -28,7 +28,7 @@ const ContactForm = () => {
                 id="floating_Name"
                 autoComplete="none"
                 required="required"
-                className="cursor-pointer rounded-md w-full pl-3 py-2.5 text-sm font-exo text-secondary dark:text-primary bg-transparent border-0 border-b-2 border-l-4 border-tertiary appearance-none  focus:outline-none focus:ring-0 focus:border-tertiary peer bp2_1:w-full"
+                className="cursor-pointer rounded-md w-full pl-3 py-2.5 text-sm font-exo text-secondary dark:text-primary bg-transparent border-0 border-b-2 border-l-4 border-tertiary appearance-none focus:outline-none focus:ring-0 focus:border-tertiary peer bp2_1:w-full"
                 placeholder=" "
               />
               <label
@@ -96,7 +96,7 @@ const ContactForm = () => {
         <div className="flex justify-center order-3 w-full h-full mt-5 lg:w-2/4 lg:justify-end lg:order-2 lg:pr-5">
           {/* :MAP CONTAINER */}
           <div className="flex w-full h-96">
-            <div className="font-montserrat absolute flex items-center justify-center flex-col p-2 m-2 text-sm text-center w-[55%] h-24 bg-primary text-secondary rounded-xl sm:w-[40%] lg:text-xl lg:w-80">
+            <div className="font-montserrat absolute flex items-center justify-center flex-col p-2 m-2 text-sm text-center w-[55%] h-24 bg-primary text-secondary rounded-xl sm:w-[40%] lg:text-xl lg:w-80 dark:bg-secondary dark:text-primary">
               <span className="flex flex-col">Geoffrey Emerit</span>
               <span className="flex flex-col">64100 Bayonne</span>
               <span className="flex flex-col">France</span>
@@ -117,7 +117,7 @@ const ContactForm = () => {
         <div className="flex justify-center order-2 w-full font-montserrat lg:order-3">
           <button
             type="submit"
-            className="px-10 m-10 text-center border-4 cursor-pointer font-orb text-secondary dark:text-primary border-y-transparent border-x-tertiary lg:hover:text-tertiary lg:dark:hover:text-primary"
+            className="px-10 m-10 text-center border-4 cursor-pointer font-orb text-secondary dark:text-primary border-y-transparent border-x-tertiary lg:hover:text-tertiary dark:lg:hover:text-tertiary"
           >
             ENVOYER
           </button>

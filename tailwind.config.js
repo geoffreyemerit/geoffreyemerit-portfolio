@@ -1,14 +1,12 @@
 module.exports = {
   content: ["./src/**/*.{html,jsx}"],
   // ...
-  darkMode: "'media','class'",
+  darkMode: "class" /*'media'*/,
   theme: {
     extend: {
       fontFamily: {
         montserrat: "'Montserrat', 'sans-serif'",
         raleway: "'Raleway', 'sans-serif'",
-        starjedi: "Starjedi",
-        galactic: "Galactic Basic",
       },
       backgroundImage: {
         landingBlack: "url('./assets/backgrounds/bg-landing-black.jpeg')",
@@ -16,11 +14,11 @@ module.exports = {
         homeBlack: "url('./assets/backgrounds/bg-home-black.png')",
         homeWhite: "url('./assets/backgrounds/bg-home-white.png')",
         aboutMeBlack: "url('./assets/backgrounds/bg-aboutme-black.jpg')",
-        aboutMeWhite: "url('./assets/backgrounds/bg-aboutme-white.jpeg')",
+        aboutMeWhite: "url('./assets/backgrounds/bg-aboutme-white.jpg')",
         skillsBlack: "url('./assets/backgrounds/bg-skills-black.jpg')",
-        skillsWhite: "url('./assets/backgrounds/bg-skills-white.jpeg')",
+        skillsWhite: "url('./assets/backgrounds/bg-skills-white.jpg')",
         portfolioBlack: "url('./assets/backgrounds/bg-portfolio-black.jpg')",
-        portfolioWhite: "url('./assets/backgrounds/bg-portfolio-white.jpeg')",
+        portfolioWhite: "url('./assets/backgrounds/bg-portfolio-white.jpg')",
         contactBlack: "url('./assets/backgrounds/bg-contact-black.jpg')",
         contactWhite: "url('./assets/backgrounds/bg-contact-white.jpeg')",
       },
