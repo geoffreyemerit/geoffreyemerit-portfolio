@@ -64,10 +64,10 @@
     @apply bg-no-repeat bg-cover bg-skillsWhite;
   }
   .portfolioBlack {
-    @apply bg-no-repeat bg-cover bg-portfolioBlack;
+    @apply h-full bg-[#040404] bg-no-repeat bg-auto sm:bg-cover bg-portfolioBlack;
   }
   .portfolioWhite {
-    @apply bg-no-repeat bg-cover bg-portfolioWhite;
+    @apply h-full bg-[#040404] bg-no-repeat bg-auto sm:bg-cover bg-portfolioWhite;
   }
   .contactBlack {
     @apply h-full bg-[#040404] bg-no-repeat bg-auto sm:bg-cover bg-contactBlack;
@@ -75,4 +75,9 @@
   .contactWhite {
     @apply bg-no-repeat bg-cover bg-contactWhite;
   }
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  --swiper-navigation-size: 20px;
+  color: white;
 }

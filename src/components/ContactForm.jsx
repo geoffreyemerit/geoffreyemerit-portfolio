@@ -9,7 +9,7 @@ const ContactForm = () => {
         Contact
       </h1>
       {/* :FORM */}
-      <p className="font-raleway flex justify-center w-[90%] mt-8 italic text-center order 1 text-tertiary">
+      <p className="font-raleway flex justify-center w-[90%] mt-8 italic text-center order 1 text-tertiary dark:text-primary">
         Vous avez une question ou vous souhaitez que l&apos;on travaille
         ensemble ?
       </p>
@@ -28,7 +28,7 @@ const ContactForm = () => {
                 id="floating_Name"
                 autoComplete="none"
                 required="required"
-                className="cursor-pointer rounded-md w-full pl-3 py-2.5 text-sm font-exo text-secondary dark:text-primary bg-transparent border-0 border-b-2 border-l-4 border-tertiary appearance-none focus:outline-none focus:ring-0 focus:border-tertiary peer bp2_1:w-full"
+                className="cursor-pointer rounded-md w-full pl-3 py-2.5 text-sm font-exo text-secondary dark:text-primary bg-transparent border-0 border-b-2 border-l-4 border-tertiary dark:border-secondary appearance-none focus:outline-none focus:ring-0 focus:border-tertiary dark:focus:border-secondary peer"
                 placeholder=" "
               />
               <label
@@ -45,7 +45,7 @@ const ContactForm = () => {
                 id="floating_email"
                 autoComplete="none"
                 required="required"
-                className="cursor-pointer rounded-md w-full pl-3 py-2.5 text-sm font-exo text-secondary dark:text-primary bg-transparent border-0 border-b-2 border-l-4 border-tertiary appearance-none focus:outline-none focus:ring-0 focus:border-tertiary peer"
+                className="cursor-pointer rounded-md w-full pl-3 py-2.5 text-sm font-exo text-secondary dark:text-primary bg-transparent border-0 border-b-2 border-l-4 border-tertiary dark:border-secondary appearance-none focus:outline-none focus:ring-0 focus:border-tertiary dark:focus:border-secondary peer"
                 placeholder=" "
               />
               <label
@@ -63,7 +63,7 @@ const ContactForm = () => {
                 id="floating_number"
                 autoComplete="none"
                 required="required"
-                className="cursor-pointer rounded-md w-full pl-3 py-2.5 text-sm font-exo text-secondary dark:text-primary bg-transparent border-0 border-b-2 border-l-4 border-tertiary appearance-none  focus:outline-none focus:ring-0 focus:border-tertiary peer bp2_1:w-full"
+                className="cursor-pointer rounded-md w-full pl-3 py-2.5 text-sm font-exo text-secondary dark:text-primary bg-transparent border-0 border-b-2 border-l-4 border-tertiary dark:border-secondary appearance-none  focus:outline-none focus:ring-0 focus:border-tertiary dark:focus:border-secondary peer"
                 placeholder=" "
               />
               <label
@@ -80,7 +80,7 @@ const ContactForm = () => {
                 id="floating_message"
                 autoComplete="off"
                 required="required"
-                className="w-full text-sm h-28 rounded-md pl-3 py-2.5 bg-transparent resize-none text-secondary dark:text-primary cursor-pointer font-exo border-0 border-b-2 border-l-4 border-tertiary appearance-none focus:outline-none focus:ring-0 focus:border-tertiary peer"
+                className="w-full text-sm h-28 rounded-md pl-3 py-2.5 bg-transparent resize-none text-secondary dark:text-primary cursor-pointer font-exo border-0 border-b-2 border-l-4 border-tertiary dark:border-secondary appearance-none focus:outline-none focus:ring-0 focus:border-tertiary dark:focus:border-secondary peer"
                 placeholder=" "
               />
               <label
@@ -117,7 +117,7 @@ const ContactForm = () => {
         <div className="flex justify-center order-2 w-full font-montserrat lg:order-3">
           <button
             type="submit"
-            className="px-10 m-10 text-center border-4 cursor-pointer font-orb text-secondary dark:text-primary border-y-transparent border-x-tertiary lg:hover:text-tertiary dark:lg:hover:text-tertiary"
+            className="px-10 m-10 text-center border-4 cursor-pointer font-orb text-secondary dark:text-primary border-y-transparent border-x-tertiary dark:border-x-secondary lg:hover:text-tertiary dark:lg:hover:text-tertiary"
           >
             ENVOYER
           </button>

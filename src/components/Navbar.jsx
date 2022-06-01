@@ -36,17 +36,32 @@ const Navbar = () => {
         </nav>
 
         {/* >> Menu Burger Icon */}
-        <button
-          type="button"
-          className="rounded-md md:hidden"
-          onClick={() => setIsOpened(!isOpened)}
-        >
-          <Logo
-            myStyle="w-10 h-10 text-secondary dark:text-primary"
-            name="logos-menu-burger"
-            id="logos-menu-burger"
-          />
-        </button>
+
+        {!isOpened ? (
+          <button
+            type="button"
+            className="rounded-md md:hidden"
+            onClick={() => setIsOpened(!isOpened)}
+          >
+            <Logo
+              myStyle="w-10 h-10 text-secondary dark:text-primary"
+              name="logos-menu-burger"
+              id="logos-menu-burger"
+            />
+          </button>
+        ) : (
+          <button
+            type="button"
+            className="rounded-md md:hidden"
+            onClick={() => setIsOpened(!isOpened)}
+          >
+            <Logo
+              myStyle="w-10 h-10 text-secondary dark:text-primary"
+              name="logos-cross"
+              id="logos-cross"
+            />
+          </button>
+        )}
       </div>
 
       {/* :MOBILE MENU */}

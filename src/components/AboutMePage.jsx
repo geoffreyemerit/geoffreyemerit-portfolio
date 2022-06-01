@@ -7,8 +7,6 @@ const AboutMePage = () => {
   const [selected, setSelected] = useState(0);
   const [data, setData] = useState(aboutMeArray);
 
-  console.log(selected);
-
   return (
     <div className="flex flex-col items-center mt-5 ">
       {/* :ABOUTME PAGE */}
@@ -32,7 +30,7 @@ const AboutMePage = () => {
           )}
         </div>
       </div>
-      <div className="flex w-[90%] items-center justify-center mt-2 mb-8 lg:w-full">
+      <div className="flex w-[90%] items-center justify-center mt-2 mb-14 lg:w-full">
         {/* >> AboutMe List */}
         {data && data.length > 0 && (
           <AboutMeList

@@ -1,20 +1,17 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-flip";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+// import required modules
+import { EffectFlip, Pagination, Navigation } from "swiper";
 import skillsTech from "../../data/skillsTech";
 import Logo from "./Logo";
 import skillsPers from "../../data/skillsPers";
 
 const SkillsList = () => {
-  /* >> Carousel Package */
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
   return (
     <div className="font-montserrat">
       {/* :SKILLS PAGE */}
@@ -25,13 +22,19 @@ const SkillsList = () => {
         </h1>
       </div>
       {/* :CAROUSEL */}
-      <div className="flex items-center justify-center mx-10 my-5">
-        <Slider
-          {...settings}
+      <div className="flex items-center justify-center mx-10 my-10">
+        <Swiper
           className="flex w-[80%] rounded-3xl bg-primary bg-opacity-70 sm:w-[70%] dark:bg-secondary dark:bg-opacity-80"
+          effect="flip"
+          loop
+          grabCursor
+          pagination
+          navigation
+          modules={[EffectFlip, Pagination, Navigation]}
         >
           {/* >> Skills Technic */}
-          <div>
+
+          <SwiperSlide>
             <h2 className="flex tracking-[0.2rem] text-sm mt-5 justify-center text-center uppercase text-secondary sm:text-xl dark:text-primary">
               Compétences Techniques
             </h2>
@@ -52,10 +55,11 @@ const SkillsList = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </SwiperSlide>
 
           {/* >> Skills Personal */}
-          <div>
+
+          <SwiperSlide>
             <h2 className="flex tracking-[0.2rem] text-sm mt-5 justify-center text-center uppercase text-secondary sm:text-xl dark:text-primary">
               Compétences Personnelles
             </h2>
@@ -76,8 +80,8 @@ const SkillsList = () => {
                 </li>
               ))}
             </ul>
-          </div>
-        </Slider>
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );
