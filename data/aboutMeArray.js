@@ -3,7 +3,7 @@ const aboutMeArray = [
     id: 0,
     name: "Just Me",
     link: "./assets/aboutMe/me.png",
-    desc: `Vous l'aurez compris je suis joueur d'echecs depuis petit ! Hormi cette info... J'ai 28ans, j'habite au pays basque et suis entrain de devenir web développeur après plus de 6ans d'immobilier. Je souhaite devenir un développeur sur qui l'on puisse compter à 200%`,
+    desc: `Vous l'aurez compris je suis joueur d'echecs depuis petit ! Hormi cette info... J'ai 28ans, j'habite au pays basque et suis entrain de devenir web développeur après plus de 6ans d'immobilier. Je souhaite devenir un développeur sur qui l'on puisse compter à 200%.`,
   },
   {
     id: 1,

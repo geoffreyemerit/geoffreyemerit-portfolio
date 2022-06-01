@@ -1,13 +1,13 @@
 import React from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import PortfolioList from "../components/PortfolioList";
+import PortfolioPage from "../components/PortfolioPage";
 
 const Portfolio = () => {
   return (
     <div className="w-screen h-screen portfolioBlack dark:portfolioWhite">
       <Navbar />
-      <PortfolioList />
+      <PortfolioPage />
       <Footer />
     </div>
   );
