@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 
 const Contact = () => {
   return (
-    <div className="w-screen h-screen contactBlack dark:contactWhite">
+    <div className="w-screen h-screen font-pat contactBlack dark:contactWhite">
       <Navbar />
       <ContactForm />
       <Footer />

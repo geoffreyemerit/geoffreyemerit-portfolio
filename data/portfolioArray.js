@@ -22,7 +22,7 @@ const portfolioArray = [
       "./assets/portfolio/shifumi2.png",
       "./assets/portfolio/shifumi3.png",
     ],
-    desc: "Le premier projet au sein de la formation. Pour une durée de 4semaines, notre équipe de 4 étudiants a développée le site web fictif du célèbre jeu pierre, feuille, ciseaux.",
+    desc: "Le premier projet au sein de la formation. Pour une durée de 4 semaines, notre équipe de 4 étudiants a développé le site web fictif du célèbre jeu pierre, feuille, ciseaux.",
     techs: [
       "./assets/portfolio/html.png",
       "./assets/portfolio/sass.png",
@@ -40,7 +40,7 @@ const portfolioArray = [
       "./assets/portfolio/st2.png",
       "./assets/portfolio/st3.png",
     ],
-    desc: "Deuxième projet, cette fois ci d'une durée de 5 semaines. L'équipe, constituée de 5 étudiants, a développée le site web d'une agence de voyage fictive autour de la saga Star Wars.",
+    desc: "Deuxième projet, cette fois ci d'une durée de 5 semaines. L'équipe, constituée de 5 étudiants, a développé le site web d'une agence de voyage fictive autour de la saga Star Wars.",
     techs: ["./assets/portfolio/react.png", "./assets/portfolio/tailwind.png"],
     link: "https://star-tour-agency.vercel.app/",
     color: "#FCD642",
@@ -80,7 +80,7 @@ const portfolioArray = [
     title: "Club Sandwich",
     date: "Juillet 2022",
     images: ["./assets/portfolio/cs.png"],
-    desc: "Troisième projet d'une durée de 8 semaines. Une équipe de 3 étudiants qui développe le site web d'un restaurant ouvrant ses portes prochainement sur Biarrtz(64). Site en construction, lien prochainement.",
+    desc: "Troisième projet d'une durée de 8 semaines. Une équipe de 4 étudiants qui développe le site web d'un restaurant qui a ouvert ses portes récemment sur Biarrtz (64). Site en construction, lien disponible prochainement.",
     techs: [
       "./assets/portfolio/react.png",
       "./assets/portfolio/sass.png",

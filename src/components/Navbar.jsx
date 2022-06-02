@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpened, setIsOpened] = useState(false);
 
   return (
-    <header className="w-full bg-transparent shadow-sm font-raleway text-secondary dark:text-primary">
+    <header className="w-full bg-transparent shadow-sm font-pat text-secondary dark:text-primary">
       {/* :DESKTOP MENU */}
       <div className="flex items-center justify-between p-5 mx-auto">
         {/* >> Site logo and Name */}
@@ -18,14 +18,14 @@ const Navbar = () => {
               alt="logo-geoffreyemerit"
               className="flex w-10 h-10 bg-tertiary md:mb-0"
             />
-            <span className="flex flex-col ml-3 text-sm font-semibold">
+            <span className="flex flex-col ml-1 text-base font-bold">
               Geoffrey Emerit
-              <span className="text-xs"> Web développeur</span>
+              <span className="text-sm"> Web développeur</span>
             </span>
           </div>
         </NavLink>
         {/* >> Navbar */}
-        <nav className="flex-wrap items-center justify-center hidden text-base tracking-wide md:ml-auto md:flex">
+        <nav className="flex-wrap items-center justify-center hidden text-lg tracking-wide md:ml-auto md:flex">
           <ul className="flex">
             {navLinks.map((link) => (
               <NavLink key={link.id} to={link.path}>

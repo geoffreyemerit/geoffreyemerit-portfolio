@@ -5,7 +5,7 @@ import PortfolioPage from "../components/PortfolioPage";
 
 const Portfolio = () => {
   return (
-    <div className="w-screen h-screen portfolioBlack dark:portfolioWhite">
+    <div className="w-screen h-screen font-pat portfolioBlack dark:portfolioWhite">
       <Navbar />
       <PortfolioPage />
       <Footer />

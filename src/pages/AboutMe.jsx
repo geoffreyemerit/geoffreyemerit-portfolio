@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 
 const AboutMe = () => {
   return (
-    <div className="w-screen h-screen aboutMeBlack dark:aboutMeWhite">
+    <div className="w-screen h-screen font-pat aboutMeBlack dark:aboutMeWhite">
       <Navbar />
       <AboutMePage />
       <Footer />

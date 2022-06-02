@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         montserrat: "'Montserrat', 'sans-serif'",
         raleway: "'Raleway', 'sans-serif'",
+        pat: "'Patrick Hand', 'cursive'",
       },
       backgroundImage: {
         landingBlack: "url('./assets/backgrounds/bg-landing-black.jpeg')",

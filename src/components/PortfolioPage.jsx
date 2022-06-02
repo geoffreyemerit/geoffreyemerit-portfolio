@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Animated } from "react-animated-css";
 import Logo from "./Logo";
 import PortfolioModal from "./PortfolioModal";
 import portfolioArray from "../../data/portfolioArray";
@@ -6,13 +7,18 @@ import portfolioArray from "../../data/portfolioArray";
 const PortfolioPage = () => {
   const [modal, setModal] = useState();
   return (
-    <>
+    <Animated
+      animationIn="zoomInUp"
+      animationOut="zoomInUp"
+      animationInDelay={1}
+      animationInDuration={1000}
+    >
       {portfolioArray && (
         <div className="flex flex-col items-center">
           <h1 className="flex items-center justify-center title">Projets</h1>
           <div className="container relative w-[90%] lg:w-full h-full mt-5 overflow-hidden ">
-            <h2 className="mx-auto p-2 w-[90%] font-bold rounded-lg text-sm text-center border-[#FC4B3A] bg-[#FC4B3A] bg-opacity-70 text-primary dark:text-secondary lg:text-base lg:w-[50%] lg:mt-10">
-              Commencement de mon aventure : Février 2022
+            <h2 className="mx-auto p-2 w-[90%] font-bold rounded-lg text-sm text-center border-[#FC4B3A] bg-[#FC4B3A] bg-opacity-70 text-primary dark:text-secondary sm:text-lg md:text-xl lg:text-2xl lg:w-[50%] lg:mt-10">
+              Début de mon aventure : Février 2022
             </h2>
             <div className="mx-[50%] h-20 rounded-xl border-4 border-[#E67140] mt-2" />
             {/* <!-- right timeline --> */}
@@ -32,10 +38,10 @@ const PortfolioPage = () => {
                   className="cursor-pointer"
                   onClick={() => setModal(portfolioArray[0])}
                 >
-                  <h3 className="font-bold underline text-md sm:text-xl text-primary dark:text-secondary">
+                  <h3 className="font-bold underline sm:text-lg md:text-xl lg:text-2xl text-primary dark:text-secondary">
                     {portfolioArray[0].title}
                   </h3>
-                  <p className="py-1 text-xs italic leading-snug tracking-wide text-opacity-100 lg:text-base text-primary dark:text-secondary">
+                  <p className="py-1 text-xs italic leading-snug tracking-wide text-opacity-100 lg:text-lg text-primary dark:text-secondary">
                     Projet personnel: Création de mon premier site web en
                     autodidacte.
                   </p>
@@ -59,12 +65,12 @@ const PortfolioPage = () => {
                   className="cursor-pointer"
                   onClick={() => setModal(portfolioArray[1])}
                 >
-                  <h3 className="font-bold underline text-md sm:text-xl text-primary dark:text-secondary">
+                  <h3 className="font-bold underline sm:text-lg md:text-xl lg:text-2xl text-primary dark:text-secondary">
                     {portfolioArray[1].title}
                   </h3>
-                  <p className="py-1 text-xs italic font-medium leading-snug tracking-wide text-opacity-100 lg:text-base text-primary dark:text-secondary">
-                    Premier projet: Création du site web du jeu Pierre, Feuille,
-                    Ciseaux.
+                  <p className="py-1 text-xs italic font-medium leading-snug tracking-wide text-opacity-100 lg:text-lg text-primary dark:text-secondary">
+                    Premier projet: Création d&apos;un site web du jeu Pierre,
+                    Feuille, Ciseaux.
                   </p>
                 </button>
               </div>
@@ -87,10 +93,10 @@ const PortfolioPage = () => {
                   className="cursor-pointer"
                   onClick={() => setModal(portfolioArray[2])}
                 >
-                  <h3 className="font-bold underline text-md sm:text-xl text-primary dark:text-secondary">
+                  <h3 className="font-bold underline sm:text-lg md:text-xl lg:text-2xl text-primary dark:text-secondary">
                     {portfolioArray[2].title}
                   </h3>
-                  <p className="py-1 text-xs italic leading-snug tracking-wide text-opacity-100 lg:text-base text-primary dark:text-secondary">
+                  <p className="py-1 text-sm italic leading-snug tracking-wide text-opacity-100 lg:text-lg text-primary dark:text-secondary">
                     Deuxième projet: Création du site web d&apos;une agence de
                     voyage fictive.
                   </p>
@@ -115,10 +121,10 @@ const PortfolioPage = () => {
                   className="cursor-pointer"
                   onClick={() => setModal(portfolioArray[3])}
                 >
-                  <h3 className="font-bold underline text-md sm:text-xl text-primary dark:text-secondary">
+                  <h3 className="font-bold underline sm:text-lg md:text-xl lg:text-2xl text-primary dark:text-secondary">
                     {portfolioArray[3].title}
                   </h3>
-                  <p className="py-1 text-xs italic font-medium leading-snug tracking-wide text-opacity-100 lg:text-base text-primary dark:text-secondary">
+                  <p className="py-1 text-sm italic font-medium leading-snug tracking-wide text-opacity-100 lg:text-lg text-primary dark:text-secondary">
                     Projet réalisé dans le cadre d&apos;un Hackathon de 36h sur
                     le thème de l&apos;écologie.
                   </p>
@@ -143,10 +149,10 @@ const PortfolioPage = () => {
                   className="cursor-pointer"
                   onClick={() => setModal(portfolioArray[4])}
                 >
-                  <h3 className="font-bold underline text-md sm:text-xl text-primary dark:text-secondary">
+                  <h3 className="font-bold underline sm:text-lg md:text-xl lg:text-2xl text-primary dark:text-secondary">
                     {portfolioArray[4].title}
                   </h3>
-                  <p className="py-1 text-xs italic font-medium leading-snug tracking-wide text-opacity-100 lg:text-base text-primary dark:text-secondary">
+                  <p className="py-1 text-sm italic font-medium leading-snug tracking-wide text-opacity-100 lg:text-lg text-primary dark:text-secondary">
                     Projet réalisé dans le cadre du deuxième Hackathon de 50h
                   </p>
                 </button>
@@ -170,10 +176,10 @@ const PortfolioPage = () => {
                   className="cursor-pointer"
                   onClick={() => setModal(portfolioArray[5])}
                 >
-                  <h3 className="font-bold underline text-md sm:text-xl text-primary dark:text-secondary">
+                  <h3 className="font-bold underline sm:text-lg md:text-xl lg:text-2xl text-primary dark:text-secondary">
                     {portfolioArray[5].title}
                   </h3>
-                  <p className="py-1 text-xs italic font-medium tracking-wide text-opacity-100 text-primary dark:text-secondary lg:text-base">
+                  <p className="py-1 text-sm italic font-medium tracking-wide text-opacity-100 text-primary dark:text-secondary lg:text-lg">
                     Troisième projet: Création du site web d&apos;un restaurant
                     à Biarritz(64).
                   </p>
@@ -186,7 +192,7 @@ const PortfolioPage = () => {
       )}
 
       {modal && <PortfolioModal {...modal} setModal={setModal} />}
-    </>
+    </Animated>
   );
 };
 
