@@ -9,8 +9,9 @@
 }
 
 @font-face {
-  font-family: "Galactic Basic";
-  src: local("Galactic Basic"), url("./assets/fonts/galbasic.ttf") format("ttf");
+  font-family: "Patrick Hand";
+  src: local("Patrick Hand"),
+    url("./assets/fonts/PatrickHand-Regular.ttf") format("ttf");
 }
 
 @tailwind base;
@@ -34,10 +35,21 @@
     text-shadow: 4px 3px 4px black;
   }
   .text-shadow-w {
-    text-shadow: 4px 3px 4px silver;
+    text-shadow: 4px 3px 4px grey;
   }
+  .text-shadow-y {
+    text-shadow: #fbc706 1px 1px, #fbc706 -1px 1px, #fbc706 -1px -1px,
+      #fbc706 1px -1px;
+  }
+  .text-shadow-nn {
+    text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px;
+  }
+  .text-shadow-bb {
+    text-shadow: white 1px 1px, white -1px 1px, white -1px -1px, white 1px -1px;
+  }
+
   .title {
-    @apply font-montserrat w-44 text-base sm:w-52 h-14 text-shadow-b sm:text-lg tracking-[0.2rem] uppercase border-2 rounded border-tertiary text-tertiary bg-primary bg-opacity-80 dark:text-primary dark:bg-secondary dark:bg-opacity-80 dark:border-primary;
+    @apply font-pat w-44 text-base sm:w-52 h-14 text-shadow-b sm:text-lg tracking-[0.2rem] uppercase border-2 rounded border-tertiary text-tertiary bg-primary bg-opacity-80 dark:text-primary dark:bg-secondary dark:bg-opacity-80 dark:border-primary;
   }
   .landingBlack {
     @apply bg-no-repeat bg-cover bg-landingBlack;
@@ -46,10 +58,10 @@
     @apply bg-no-repeat bg-cover bg-landingWhite;
   }
   .homeBlack {
-    @apply bg-no-repeat bg-cover bg-homeBlack;
+    @apply h-full bg-no-repeat bg-cover bg-homeBlack;
   }
   .homeWhite {
-    @apply bg-no-repeat bg-cover bg-homeWhite;
+    @apply h-full bg-no-repeat bg-cover bg-homeWhite;
   }
   .aboutMeBlack {
     @apply h-full bg-[#3C3C3C] bg-no-repeat bg-cover bg-aboutMeBlack;

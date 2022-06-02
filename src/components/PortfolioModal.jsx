@@ -51,15 +51,15 @@ const PortfolioModal = ({
           className={`absolute w-[90%] mt-[32rem] bg-[${color}] h-64 sm:w-[80%] sm:mt-[36rem] lg:mt-[40rem] lg:w-[60%]`}
         >
           {/* >> Title */}
-          <h3 className="text-center underline ml-2 mt-1 absolute z-[20] font-bold text-xl text-primary dark:text-secondary -mb-[300px] sm:text-2xl">
+          <h3 className="text-center underline ml-2 mt-1 absolute z-[20] font-bold text-2xl text-primary dark:text-secondary -mb-[300px] sm:text-3xl">
             {title}
           </h3>
           {/* >> Date */}
-          <span className="absolute w-[90%] italic ml-2 text-xs text-justify mt-8 text-primary dark:text-secondary sm:text-base lg:mt-10">
+          <span className="absolute w-[90%] italic ml-2 text-sm text-justify mt-8 text-primary dark:text-secondary sm:text-lg lg:mt-10">
             Effectué en {date}
           </span>
           {/* >> Paragraph */}
-          <p className="absolute w-[90%] ml-2 text-xs text-justify mt-14 text-primary  tracking-tight dark:text-secondary sm:text-base lg:mt-16">
+          <p className="absolute w-[90%] ml-2 text-sm text-justify mt-14 text-primary  tracking-tight dark:text-secondary sm:text-xl lg:mt-16">
             {desc}
           </p>
           {/* >> Icons Techs */}
@@ -77,7 +77,7 @@ const PortfolioModal = ({
           <a
             href={link}
             target="_blank"
-            className="absolute uppercase px-6 ml-2 mt-2 font-medium text-primary bg-opacity-40 border-2 border-primary text-sm bg-primary hover:scale-[1.01] dark:border-secondary dark:bg-secondary dark:text-secondary dark:bg-opacity-40 md:text-base sm:mt-8 lg:mt-4"
+            className="absolute uppercase px-6 ml-2 mt-2 font-medium text-primary bg-opacity-40 border-2 border-primary text-base bg-primary hover:scale-[1.01] dark:border-secondary dark:bg-secondary dark:text-secondary dark:bg-opacity-40 md:text-lg sm:mt-8 lg:mt-2"
             rel="noreferrer"
           >
             Voir site
@@ -88,7 +88,7 @@ const PortfolioModal = ({
             onClick={() => {
               setModal();
             }}
-            className="absolute z-10 left-[100%] -ml-5 justify-end mt-1 text-2xl text-primary dark:text-secondary hover:scale-105 md:text-3xl sm:-ml-6 sm:mt-8 lg:mt-3"
+            className="absolute z-10 left-[100%] -ml-5 justify-end mt-1 text-3xl text-primary dark:text-secondary hover:scale-105 md:text-4xl sm:-ml-6 sm:mt-8 lg:mt-2"
           >
             X
           </button>

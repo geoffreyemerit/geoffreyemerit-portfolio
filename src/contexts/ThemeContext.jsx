@@ -37,7 +37,6 @@ export const ThemeProvider = ({ initialTheme, children }) => {
   }
 
   useEffect(() => {
-    console.log("theme changing");
     rawSetTheme(theme);
   }, [theme]);
 

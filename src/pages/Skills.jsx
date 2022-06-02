@@ -5,7 +5,7 @@ import SkillsList from "../components/SkillsList";
 
 const Skills = () => {
   return (
-    <div className="w-screen h-screen skillsBlack dark:skillsWhite">
+    <div className="w-screen h-screen font-pat skillsBlack dark:skillsWhite">
       <Navbar />
       <SkillsList />
       <Footer />
