@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Monserrat"),
+    url("./assets/fonts/Monserrat-SemiBold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), url("./assets/fonts/Raleway-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Patrick Hand";
+  src: local("Patrick Hand"),
+    url("./assets/fonts/PatrickHand-Regular.ttf") format("ttf");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,4 +31,65 @@
   .text-shadow-none {
     text-shadow: none;
   }
+  .text-shadow-b {
+    text-shadow: 4px 3px 4px black;
+  }
+  .text-shadow-w {
+    text-shadow: 4px 3px 4px grey;
+  }
+  .text-shadow-y {
+    text-shadow: #fbc706 1px 1px, #fbc706 -1px 1px, #fbc706 -1px -1px,
+      #fbc706 1px -1px;
+  }
+  .text-shadow-nn {
+    text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px;
+  }
+  .text-shadow-bb {
+    text-shadow: white 1px 1px, white -1px 1px, white -1px -1px, white 1px -1px;
+  }
+
+  .title {
+    @apply font-pat w-44 text-base sm:w-52 h-14 text-shadow-b sm:text-lg tracking-[0.2rem] uppercase border-2 rounded border-tertiary text-tertiary bg-primary bg-opacity-80 dark:text-primary dark:bg-secondary dark:bg-opacity-80 dark:border-primary;
+  }
+  .landingBlack {
+    @apply bg-no-repeat bg-cover bg-landingBlack;
+  }
+  .landingWhite {
+    @apply bg-no-repeat bg-cover bg-landingWhite;
+  }
+  .homeBlack {
+    @apply h-full bg-no-repeat bg-cover bg-homeBlack;
+  }
+  .homeWhite {
+    @apply h-full bg-no-repeat bg-cover bg-homeWhite;
+  }
+  .aboutMeBlack {
+    @apply h-full bg-[#3C3C3C] bg-no-repeat bg-cover bg-aboutMeBlack;
+  }
+  .aboutMeWhite {
+    @apply bg-no-repeat bg-cover bg-aboutMeWhite;
+  }
+  .skillsBlack {
+    @apply h-full bg-[#040404] bg-no-repeat bg-auto sm:bg-cover bg-skillsBlack;
+  }
+  .skillsWhite {
+    @apply bg-no-repeat bg-cover bg-skillsWhite;
+  }
+  .portfolioBlack {
+    @apply h-full bg-[#040404] bg-no-repeat bg-auto sm:bg-cover bg-portfolioBlack;
+  }
+  .portfolioWhite {
+    @apply h-full bg-[#040404] bg-no-repeat bg-auto sm:bg-cover bg-portfolioWhite;
+  }
+  .contactBlack {
+    @apply h-full bg-[#040404] bg-no-repeat bg-auto sm:bg-cover bg-contactBlack;
+  }
+  .contactWhite {
+    @apply bg-no-repeat bg-cover bg-contactWhite;
+  }
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  --swiper-navigation-size: 20px;
+  color: white;
 }
