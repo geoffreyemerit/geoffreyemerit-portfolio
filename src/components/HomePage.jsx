@@ -8,7 +8,7 @@ const HomePage = () => {
     <div className="flex flex-col items-center h-screen ">
       <Navbar />
       {/* :HOME PAGE */}
-      <div className="flex flex-col items-center self-center justify-center w-full h-[50%]">
+      <div className="flex flex-col items-center self-center justify-center w-full h-[50%] mt-10">
         {/* >> Title + Name */}
 
         <h2 className="flex flex-row w-full text-2xl no-wrap">
