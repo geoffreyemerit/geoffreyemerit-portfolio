@@ -23,14 +23,14 @@ const PortfolioModal = ({
   /* >> Carousel Package */
   return (
     // : MODAL DECORATION
-    <div className="z-[20] fixed top-[30%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-screen h-[1000px] flex justify-center items-center backdrop-blur-[2px]">
-      {/* :SECTION 1 */}
-      {/* >> Carousel */}
+    <div className="z-[20] fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-screen h-screen flex justify-center items-center backdrop-blur-[2px] bg-yellow-400">
       <div
-        className={`flex flex-col border-2 border-[${color}] bg-[${color}] -top-[50%] items-center w-[90%] h-64 justify-center sm:w-[80%] sm:h-80 lg:w-[60%] lg:h-96`}
+        className={`flex flex-col border-2 border-[${color}] bg-[${color}] w-[80%] h-[80%] sm:w-[70%] sm:h-[80%] lg:w-[60%] lg:h-[80%]`}
       >
+        {/* :SECTION 1 */}
+        {/* >> Carousel */}
         <Swiper
-          className="w-full h-full sm:h-80 lg:h-96"
+          className="flex flex-col w-full bg-blue-400 h-[40%] sm:h-[50%] lg:h-[55%]"
           spaceBetween={30}
           loop
           effect="fade"
@@ -48,50 +48,52 @@ const PortfolioModal = ({
         </Swiper>
         {/* :SECTION 2 */}
         <div
-          className={`absolute w-[90%] mt-[32rem] bg-[${color}] h-64 sm:w-[80%] sm:mt-[36rem] lg:mt-[40rem] lg:w-[60%]`}
+          className={`flex flex-col justify-between w-full h-[60%] sm:h-[50%] lg:h-[45%] bg-[${color}]`}
         >
           {/* >> Title */}
-          <h3 className="text-center underline ml-2 mt-1 absolute z-[20] font-bold text-2xl text-primary dark:text-secondary -mb-[300px] sm:text-3xl">
+          <h3 className="m-1 text-2xl font-bold underline text-start text-primary dark:text-secondary sm:text-3xl">
             {title}
           </h3>
           {/* >> Date */}
-          <span className="absolute w-[90%] italic ml-2 text-sm text-justify mt-8 text-primary dark:text-secondary sm:text-lg lg:mt-10">
+          <span className="ml-1 text-sm italic text-justify text-primary dark:text-secondary sm:text-lg">
             Effectué en {date}
           </span>
           {/* >> Paragraph */}
-          <p className="absolute w-[90%] ml-2 text-sm text-justify mt-14 text-primary  tracking-tight dark:text-secondary sm:text-xl lg:mt-16">
+          <p className="my-1 ml-1 mr-3 text-sm tracking-tight text-justify text-primary dark:text-secondary sm:text-xl">
             {desc}
           </p>
           {/* >> Icons Techs */}
-          <div className="flex flex-row justify-around mt-40 sm:mt-32 lg:mt-36">
+          <div className="flex flex-row flex-wrap justify-around ml-1">
             {techs.map((tech, index) => (
               <img
-                className="w-16 h-14 sm:w-16 sm:h-16"
+                className="h-12 w-14 sm:h-16 sm:w-18"
                 key={index}
                 src={tech}
                 alt={tech}
               />
             ))}
           </div>
-          {/* >> Button View Site */}
-          <a
-            href={link}
-            target="_blank"
-            className="absolute uppercase px-6 ml-2 mt-2 font-medium text-primary bg-opacity-40 border-2 border-primary text-base bg-primary hover:scale-[1.01] dark:border-secondary dark:bg-secondary dark:text-secondary dark:bg-opacity-40 md:text-lg sm:mt-8 lg:mt-2"
-            rel="noreferrer"
-          >
-            Voir site
-          </a>
-          {/* >> Exit */}
-          <button
-            type="button"
-            onClick={() => {
-              setIsModalOpened(false);
-            }}
-            className="absolute z-10 left-[100%] -ml-5 justify-end mt-1 text-3xl text-primary dark:text-secondary hover:scale-105 md:text-4xl sm:-ml-6 sm:mt-8 lg:mt-2"
-          >
-            X
-          </button>
+          <div className="flex flex-row items-end justify-between w-full">
+            {/* >> Button View Site */}
+            <a
+              href={link}
+              target="_blank"
+              className="flex h-10 mx-2 my-1 items-center uppercase px-6 font-medium text-primary bg-opacity-40 border-2 border-primary text-base bg-primary hover:scale-[1.01] dark:border-secondary dark:bg-secondary dark:text-secondary dark:bg-opacity-40 md:text-lg"
+              rel="noreferrer"
+            >
+              Voir site
+            </a>
+            {/* >> Exit */}
+            <button
+              type="button"
+              onClick={() => {
+                setIsModalOpened(false);
+              }}
+              className="flex justify-end mx-2 my-1 text-3xl text-primary dark:text-secondary hover:scale-105 md:text-4xl"
+            >
+              X
+            </button>
+          </div>
         </div>
       </div>
     </div>
