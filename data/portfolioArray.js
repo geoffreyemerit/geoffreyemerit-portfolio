@@ -2,6 +2,7 @@ const portfolioArray = [
   {
     id: 0,
     title: "Jason et la toison d'or",
+    intro: "Projet personnel: Création de mon premier site web en autodidacte.",
     date: "Février 2022",
     images: [
       "./assets/portfolio/jason1.png",
@@ -16,6 +17,8 @@ const portfolioArray = [
   {
     id: 1,
     title: "Shifumi",
+    intro:
+      "Premier projet: Création d'un site web du jeu Pierre, Feuille, Ciseaux.",
     date: "Mars 2022",
     images: [
       "./assets/portfolio/shifumi1.png",
@@ -34,6 +37,8 @@ const portfolioArray = [
   {
     id: 2,
     title: "Star Tour",
+    intro:
+      "Deuxième projet: Création du site web d'une agence de voyage fictive.",
     date: "Avril 2022",
     images: [
       "./assets/portfolio/st1.png",
@@ -48,6 +53,8 @@ const portfolioArray = [
   {
     id: 3,
     title: "Sauve Qui Peut",
+    intro:
+      "Projet réalisé dans le cadre d'un Hackathon de 36h sur le thème de l'écologie.",
     date: "Mai 2022",
     images: [
       "./assets/portfolio/sqp1.png",
@@ -62,6 +69,7 @@ const portfolioArray = [
   {
     id: 4,
     title: "Hackathon 2 à venir",
+    intro: "Projet réalisé dans le cadre du deuxième Hackathon de 50h",
     date: "Juin 2022",
     images: ["./assets/portfolio/mystere.jpeg"],
     desc: "Deuxième hackathon à venir la dernière semaine de juin.",
@@ -78,6 +86,8 @@ const portfolioArray = [
   {
     id: 5,
     title: "Club Sandwich",
+    intro:
+      "Troisième projet: Création du site web d'un restaurant à Biarritz (64).",
     date: "Juillet 2022",
     images: ["./assets/portfolio/cs.png"],
     desc: "Troisième projet d'une durée de 8 semaines. Une équipe de 4 étudiants qui développe le site web d'un restaurant qui a ouvert ses portes récemment sur Biarrtz (64). Site en construction, lien disponible prochainement.",

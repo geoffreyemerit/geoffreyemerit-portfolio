@@ -13,7 +13,7 @@ const PortfolioModal = ({
   id,
   color,
   date,
-  setModal,
+  setIsModalOpened,
   images,
   title,
   desc,
@@ -86,7 +86,7 @@ const PortfolioModal = ({
           <button
             type="button"
             onClick={() => {
-              setModal();
+              setIsModalOpened(false);
             }}
             className="absolute z-10 left-[100%] -ml-5 justify-end mt-1 text-3xl text-primary dark:text-secondary hover:scale-105 md:text-4xl sm:-ml-6 sm:mt-8 lg:mt-2"
           >
@@ -103,7 +103,7 @@ PortfolioModal.propTypes = {
   color: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
-  setModal: PropTypes.func.isRequired,
+  setIsModalOpened: PropTypes.func.isRequired,
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
   images: PropTypes.arrayOf(PropTypes.string),
