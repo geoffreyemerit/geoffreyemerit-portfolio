@@ -49,7 +49,7 @@ const SkillsList = () => {
                 {skillsTech.map((skill) => (
                   <li
                     key={skill.id}
-                    className="flex flex-col items-center h-20 w-14 sm:w-20"
+                    className="flex flex-col items-center justify-center h-20 mb-2 w-14 sm:w-20"
                   >
                     <Logo
                       myStyle="h-20 w-14 sm:w-20"
