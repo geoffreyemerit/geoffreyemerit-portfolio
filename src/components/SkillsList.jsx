@@ -24,12 +24,12 @@ const SkillsList = () => {
       >
         <div className="flex flex-col items-center">
           {/* >> Title */}
-          <h1 className="flex items-center justify-center mt-5 title sm:mt-0">
+          <h1 className="flex items-center justify-center mt-5 title">
             Compétences
           </h1>
         </div>
         {/* :CAROUSEL */}
-        <div className="flex items-center justify-center mx-10 my-10">
+        <div className="flex items-center justify-center m-14">
           <Swiper
             className="flex w-[80%] rounded-3xl bg-primary bg-opacity-70 sm:w-[70%] dark:bg-secondary dark:bg-opacity-80"
             effect="flip"
@@ -45,18 +45,18 @@ const SkillsList = () => {
               <h2 className="flex tracking-[0.2rem] text-sm mt-5 justify-center text-center uppercase text-secondary sm:text-2xl dark:text-primary">
                 Compétences Techniques
               </h2>
-              <ul className="flex flex-wrap justify-center gap-16 mx-3 my-5 sm:gap-20 ">
+              <ul className="flex flex-wrap justify-center gap-10 mx-3 my-5 sm:gap-20">
                 {skillsTech.map((skill) => (
                   <li
                     key={skill.id}
-                    className="flex flex-col items-center justify-center h-20 mb-2 w-14 sm:w-20"
+                    className="flex flex-col items-center justify-center w-20 h-20 mb-2 lg:w-28 lg:h-28"
                   >
                     <Logo
-                      myStyle="h-20 w-14 sm:w-20"
+                      myStyle="h-[95%] w-[95%]"
                       name={skill.name}
                       id={skill.id}
                     />
-                    <span className="flex items-center justify-center mt-1 text-sm italic uppercase text-secondary dark:text-primary">
+                    <span className="flex items-center justify-center w-20 mt-1 text-base italic uppercase text-secondary dark:text-primary">
                       {skill.name}
                     </span>
                   </li>
@@ -70,14 +70,14 @@ const SkillsList = () => {
               <h2 className="flex tracking-[0.2rem] text-sm mt-5 justify-center text-center uppercase text-secondary sm:text-2xl dark:text-primary">
                 Compétences Personnelles
               </h2>
-              <ul className="flex flex-wrap justify-center gap-16 m-5 sm:gap-20 ">
+              <ul className="flex flex-wrap justify-center gap-16 m-5 sm:gap-20">
                 {skillsPers.map((skill) => (
                   <li
                     key={skill.id}
-                    className="flex flex-col items-center h-20 m-5 w-42"
+                    className="flex flex-col items-center justify-center w-32 h-32 m-5"
                   >
                     <Logo
-                      myStyle="h-20 w-20 text-secondary dark:text-primary"
+                      myStyle="h-[95%] w-[95%] text-secondary dark:text-primary"
                       name={skill.name}
                       id={skill.id}
                     />
