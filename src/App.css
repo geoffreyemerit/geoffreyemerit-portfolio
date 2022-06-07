@@ -1,17 +1,17 @@
 @font-face {
   font-family: "Montserrat";
   src: local("Monserrat"),
-    url("./assets/fonts/Monserrat-SemiBold.ttf") format("ttf");
+    url("/assets/fonts/Monserrat-SemiBold.ttf") format("ttf");
 }
 @font-face {
   font-family: "Raleway";
-  src: local("Raleway"), url("./assets/fonts/Raleway-Regular.ttf") format("ttf");
+  src: local("Raleway"), url("/assets/fonts/Raleway-Regular.ttf") format("ttf");
 }
 
 @font-face {
   font-family: "Patrick Hand";
   src: local("Patrick Hand"),
-    url("./assets/fonts/PatrickHand-Regular.ttf") format("ttf");
+    url("/assets/fonts/PatrickHand-Regular.ttf") format("ttf");
 }
 
 @tailwind base;
