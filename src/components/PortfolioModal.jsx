@@ -8,29 +8,29 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import required modules
 import { EffectFade, Navigation, Pagination } from "swiper";
+import Logo from "./Logo";
 
 const PortfolioModal = ({
   id,
   color,
   date,
-  setIsModalOpened,
   images,
   title,
   desc,
   techs,
   link,
+  setModalToOpen,
 }) => {
-  /* >> Carousel Package */
   return (
     // : MODAL DECORATION
-    <div className="z-[20] fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-screen h-screen flex justify-center items-center backdrop-blur-[2px] bg-yellow-400">
+    <div className="z-[20] fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-screen h-screen flex justify-center items-center backdrop-blur-[2px] bg-primary bg-opacity-10">
       <div
-        className={`flex flex-col border-2 border-[${color}] bg-[${color}] w-[80%] h-[80%] sm:w-[70%] sm:h-[80%] lg:w-[60%] lg:h-[80%]`}
+        className={`flex flex-col border-2 border-[${color}] bg-[${color}] w-[80%] h-[80%] sm:w-[70%] sm:h-[80%] lg:w-[60%] lg:h-[90%] rounded-2xl animate-modalSlideIn modal-shadow`}
       >
         {/* :SECTION 1 */}
         {/* >> Carousel */}
         <Swiper
-          className="flex flex-col w-full bg-blue-400 h-[40%] sm:h-[50%] lg:h-[55%]"
+          className="flex flex-col w-full bg-blue-400 h-[40%] sm:h-[50%] lg:h-[55%] rounded-2xl "
           spaceBetween={30}
           loop
           effect="fade"
@@ -42,13 +42,17 @@ const PortfolioModal = ({
         >
           {images.map((image, index) => (
             <SwiperSlide key={index}>
-              <img className="w-full h-full" src={image} alt={id} />
+              <img
+                className="w-full h-full rounded-2xl "
+                src={image}
+                alt={id}
+              />
             </SwiperSlide>
           ))}
         </Swiper>
         {/* :SECTION 2 */}
         <div
-          className={`flex flex-col justify-between w-full h-[60%] sm:h-[50%] lg:h-[45%] bg-[${color}]`}
+          className={`flex flex-col justify-between w-full h-[60%] sm:h-[50%] lg:h-[45%] bg-[${color}] rounded-2xl `}
         >
           {/* >> Title */}
           <h3 className="m-1 text-2xl font-bold underline text-start text-primary dark:text-secondary sm:text-3xl">
@@ -78,7 +82,7 @@ const PortfolioModal = ({
             <a
               href={link}
               target="_blank"
-              className="flex h-10 mx-2 my-1 items-center uppercase px-6 font-medium text-primary bg-opacity-40 border-2 border-primary text-base bg-primary hover:scale-[1.01] dark:border-secondary dark:bg-secondary dark:text-secondary dark:bg-opacity-40 md:text-lg"
+              className="flex h-10 mx-2 my-1 items-center uppercase px-6 font-medium text-primary rounded-2xl  bg-opacity-40 border-2 border-primary text-base bg-primary hover:scale-[1.01] dark:border-secondary dark:bg-secondary dark:text-secondary dark:bg-opacity-40 md:text-lg"
               rel="noreferrer"
             >
               Voir site
@@ -86,12 +90,14 @@ const PortfolioModal = ({
             {/* >> Exit */}
             <button
               type="button"
-              onClick={() => {
-                setIsModalOpened(false);
-              }}
+              onClick={() => setModalToOpen(-1)}
               className="flex justify-end mx-2 my-1 text-3xl text-primary dark:text-secondary hover:scale-105 md:text-4xl"
             >
-              X
+              <Logo
+                myStyle="w-10 h-10 text-secondary text-opacity-80"
+                name="logos-cross"
+                id="logos-cross"
+              />
             </button>
           </div>
         </div>
@@ -105,7 +111,7 @@ PortfolioModal.propTypes = {
   color: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
-  setIsModalOpened: PropTypes.func.isRequired,
+  setModalToOpen: PropTypes.func,
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
   images: PropTypes.arrayOf(PropTypes.string),
@@ -116,6 +122,7 @@ PortfolioModal.defaultProps = {
   id: 1,
   images: [""],
   techs: [""],
+  setModalToOpen: () => {},
 };
 
 export default PortfolioModal;

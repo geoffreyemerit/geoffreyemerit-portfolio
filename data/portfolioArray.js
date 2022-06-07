@@ -80,7 +80,6 @@ const portfolioArray = [
       "./assets/portfolio/node.png",
       "./assets/portfolio/mysql.png",
     ],
-    link: "",
     color: "#53D57B",
   },
   {
@@ -98,7 +97,6 @@ const portfolioArray = [
       "./assets/portfolio/node.png",
       "./assets/portfolio/mysql.png",
     ],
-    link: "",
     color: "#4BCFCD",
   },
 ];

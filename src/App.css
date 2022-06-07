@@ -47,7 +47,9 @@
   .text-shadow-bb {
     text-shadow: white 1px 1px, white -1px 1px, white -1px -1px, white 1px -1px;
   }
-
+  .modal-shadow {
+    box-shadow: 0px 0px 0px 1000px rgb(0, 0, 0, 0.5), 0px 0px 25px black;
+  }
   .title {
     @apply font-pat w-44 text-base sm:w-52 h-14 text-shadow-b sm:text-lg tracking-[0.2rem] uppercase border-2 rounded border-tertiary text-tertiary bg-primary bg-opacity-80 dark:text-primary dark:bg-secondary dark:bg-opacity-80 dark:border-primary;
   }
