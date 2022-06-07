@@ -94,7 +94,7 @@ const PortfolioModal = ({
               className="flex justify-end mx-2 my-1 text-3xl text-primary dark:text-secondary hover:scale-105 md:text-4xl"
             >
               <Logo
-                myStyle="w-10 h-10 text-secondary text-opacity-80 dark:text-primary"
+                myStyle="w-10 h-10 text-primary text-opacity-80 dark:text-secondary dark:text-opacity-80"
                 name="logos-cross"
                 id="logos-cross"
               />
