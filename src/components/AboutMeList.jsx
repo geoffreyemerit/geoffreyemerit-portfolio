@@ -4,7 +4,7 @@ import AboutMeCard from "./AboutMeCard";
 
 const AboutMeList = ({ data, selected, setSelected }) => {
   return (
-    <div className="flex flex-wrap items-center justify-evenly w-full h-full gap-2 cursor-pointer sm:gap-4 lg:w-[90%] md:justify-center lg:gap-10">
+    <div className="flex flex-wrap items-center justify-around w-full h-full gap-2 cursor-pointer sm:gap-4 lg:w-[95%] md:justify-center lg:gap-10">
       {data &&
         data
           .filter((aboutme) => aboutme.id !== selected)
