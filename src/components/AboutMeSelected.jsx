@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 
 const AboutMeSelected = ({ aboutme }) => {
   return (
-    <div className="flex items-center justify-center w-full h-full rounded-xl bg-primary bg-opacity-70 dark:bg-secondary dark:bg-opacity-70">
+    <div className="flex items-center justify-center w-full h-full bg-primary rounded-xl bg-opacity-70 dark:bg-secondary dark:bg-opacity-70">
       {aboutme.link && (
         <img
           src={aboutme.link}
-          className="flex rounded-xl object-cover w-full h-full lg:w-[31.25rem] lg:h-[21.875rem]"
+          className="flex rounded-xl object-cover w-[95%] h-[95%]"
           alt={aboutme.name}
         />
       )}

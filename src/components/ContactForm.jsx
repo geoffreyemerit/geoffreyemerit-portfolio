@@ -9,21 +9,19 @@ const ContactForm = () => {
       animationInDelay={1}
       animationInDuration={1000}
     >
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center min-h-screen">
         {/* :CONTACT PAGE */}
         {/* >> Title */}
 
-        <h1 className="flex items-center justify-center mt-5 title sm:mt-0">
-          Contact
-        </h1>
+        <h1 className="flex items-center justify-center mt-5 title">Contact</h1>
         {/* :FORM */}
-        <p className=" flex justify-center text-xl w-[90%] mt-8 italic text-center order 1 text-tertiary dark:text-primary">
+        <p className=" flex justify-center text-xl w-[90%] mt-10 italic text-center order 1 text-tertiary dark:text-primary">
           Vous avez une question ou vous souhaitez que l&apos;on travaille
           ensemble ?
         </p>
         <form
           autoComplete="none"
-          className="flex flex-col flex-wrap justify-center m-5 rounded-3xl w-[90%] sm:w-[60%] lg:flex-row lg:w-[85%] "
+          className="flex flex-col flex-wrap justify-center rounded-3xl w-[90%] sm:w-[60%] lg:flex-row lg:w-[85%] m-10"
         >
           {/* >> Section Left */}
           <div className="flex justify-center w-full mt-5 lg:w-2/4">
@@ -126,7 +124,7 @@ const ContactForm = () => {
           <div className="flex justify-center order-2 w-full lg:order-3">
             <button
               type="submit"
-              className="px-10 m-10 text-xl text-center border-4 cursor-pointer text-secondary dark:text-primary border-y-transparent border-x-tertiary dark:border-x-secondary lg:hover:text-tertiary dark:lg:hover:text-tertiary"
+              className="px-10 mt-10 text-xl text-center border-4 cursor-pointer md:mt-20 text-secondary dark:text-primary border-y-transparent border-x-tertiary dark:border-x-secondary lg:hover:text-tertiary dark:lg:hover:text-tertiary"
             >
               ENVOYER
             </button>

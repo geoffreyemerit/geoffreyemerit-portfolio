@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col items-center h-screen ">
+    <div className="flex flex-col items-center h-screen">
       <Navbar />
       {/* :HOME PAGE */}
       <div className="flex flex-col items-center self-center justify-center w-full h-[50%] mt-10">
