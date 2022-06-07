@@ -9,11 +9,11 @@ const Footer = () => {
       {/* >> Social Networks */}
       <ul className="flex flex-wrap justify-between w-full">
         {footLinks.map((link) => (
-          <a key={link.id} href={link.href} target={link.target}>
-            <li className="m-2 sm:m-4">
+          <li key={link.id} className="m-2 sm:m-4 hover:text-tertiary">
+            <a href={link.href} target={link.target}>
               <Logo myStyle="w-6 h-6" name={link.name} id={link.id} />
-            </li>
-          </a>
+            </a>
+          </li>
         ))}
         {/* >> Copyright */}
         <li className="flex items-center m-2 text-base sm:m-4">

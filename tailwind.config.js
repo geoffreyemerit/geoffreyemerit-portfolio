@@ -9,6 +9,15 @@ module.exports = {
         raleway: "'Raleway', 'sans-serif'",
         pat: "'Patrick Hand', 'cursive'",
       },
+      keyframes: {
+        modalSlideIn: {
+          "0%": { transform: "translate(0px, -70px)" },
+          "100%": { transform: "translate(0px, 0px)" },
+        },
+      },
+      animation: {
+        modalSlideIn: "modalSlideIn 0.2s ease-out",
+      },
       backgroundImage: {
         landingBlack: "url('./assets/backgrounds/bg-landing-black.jpeg')",
         landingWhite: "url('./assets/backgrounds/bg-landing-white.jpeg')",
