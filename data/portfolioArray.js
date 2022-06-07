@@ -68,7 +68,7 @@ const portfolioArray = [
   },
   {
     id: 4,
-    title: "Hackathon 2 à venir",
+    title: "Hackathon 2 (à venir)",
     intro: "Projet réalisé dans le cadre du deuxième Hackathon de 50h",
     date: "Juin 2022",
     images: ["./assets/portfolio/mystere.jpeg"],
@@ -80,14 +80,15 @@ const portfolioArray = [
       "./assets/portfolio/node.png",
       "./assets/portfolio/mysql.png",
     ],
+    link: "",
     color: "#53D57B",
   },
   {
     id: 5,
-    title: "Club Sandwich",
+    title: "Club Sandwich (en cours)",
     intro:
       "Troisième projet: Création du site web d'un restaurant à Biarritz (64).",
-    date: "Juillet 2022",
+    date: "Juin / Juillet 2022",
     images: ["./assets/portfolio/cs.png"],
     desc: "Troisième projet d'une durée de 8 semaines. Une équipe de 4 étudiants qui développe le site web d'un restaurant qui a ouvert ses portes récemment sur Biarrtz (64). Site en construction, lien disponible prochainement.",
     techs: [
@@ -97,6 +98,7 @@ const portfolioArray = [
       "./assets/portfolio/node.png",
       "./assets/portfolio/mysql.png",
     ],
+    link: "",
     color: "#4BCFCD",
   },
 ];

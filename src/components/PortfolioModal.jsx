@@ -25,7 +25,7 @@ const PortfolioModal = ({
     // : MODAL DECORATION
     <div className="z-[20] fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-screen h-screen flex justify-center items-center backdrop-blur-[2px] bg-primary bg-opacity-10">
       <div
-        className={`flex flex-col border-2 border-[${color}] bg-[${color}] w-[80%] h-[80%] sm:w-[70%] sm:h-[80%] lg:w-[60%] lg:h-[90%] rounded-2xl animate-modalSlideIn modal-shadow`}
+        className={`flex flex-col border-2 border-[${color}] bg-[${color}] w-[80%] h-[80%] sm:w-[70%] sm:h-[90%] lg:w-[60%] rounded-2xl animate-modalSlideIn modal-shadow`}
       >
         {/* :SECTION 1 */}
         {/* >> Carousel */}
@@ -70,7 +70,7 @@ const PortfolioModal = ({
           <div className="flex flex-row flex-wrap justify-around ml-1">
             {techs.map((tech, index) => (
               <img
-                className="h-12 w-14 sm:h-16 sm:w-18"
+                className="w-10 h-8 sm:h-16 sm:w-20"
                 key={index}
                 src={tech}
                 alt={tech}
@@ -94,7 +94,7 @@ const PortfolioModal = ({
               className="flex justify-end mx-2 my-1 text-3xl text-primary dark:text-secondary hover:scale-105 md:text-4xl"
             >
               <Logo
-                myStyle="w-10 h-10 text-secondary text-opacity-80"
+                myStyle="w-10 h-10 text-secondary text-opacity-80 dark:text-primary"
                 name="logos-cross"
                 id="logos-cross"
               />

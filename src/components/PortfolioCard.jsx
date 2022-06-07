@@ -7,7 +7,7 @@ const PortfolioCard = ({ id, title, intro, setModalToOpen }) => {
       <button
         type="submit"
         id={id}
-        className="cursor-pointer"
+        className="cursor-pointer transition duration-300 ease-in-out hover:scale-[1.02]"
         onClick={() => setModalToOpen(id)}
       >
         <h3 className="font-bold underline sm:text-lg md:text-xl lg:text-2xl text-primary dark:text-secondary">
