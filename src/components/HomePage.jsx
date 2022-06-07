@@ -66,7 +66,7 @@ const HomePage = () => {
           animationOut="fadeIn"
           animationInDelay={1000}
           animationInDuration={500}
-          className="flex flex-col flex-wrap justify-center items-center w-[80%] h-[40%] gap-10 sm:flex-row sm:justify-around "
+          className="flex flex-wrap justify-center items-center w-[80%] h-[40%] gap-10 sm:flex-row sm:justify-around"
         >
           <Link to="/aboutme">
             <button
