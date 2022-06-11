@@ -29,9 +29,9 @@ const SkillsList = () => {
           </h1>
         </div>
         {/* :CAROUSEL */}
-        <div className="flex items-center justify-center m-14">
+        <div className="flex items-center justify-center px-5 m-14">
           <Swiper
-            className="flex w-[80%] rounded-3xl bg-primary bg-opacity-70 sm:w-[70%] dark:bg-secondary dark:bg-opacity-80"
+            className="flex w-[80%] rounded-3xl neumorphismfield bg-primary bg-opacity-70 sm:w-[70%] dark:bg-secondary dark:bg-opacity-80"
             effect="flip"
             loop
             grabCursor
@@ -56,7 +56,7 @@ const SkillsList = () => {
                       name={skill.name}
                       id={skill.id}
                     />
-                    <span className="flex items-center justify-center w-20 mt-1 text-base italic uppercase text-secondary dark:text-primary">
+                    <span className="flex items-center justify-center w-20 mt-1 text-base italic uppercase font-extralight text-secondary dark:text-primary">
                       {skill.name}
                     </span>
                   </li>
@@ -81,7 +81,7 @@ const SkillsList = () => {
                       name={skill.name}
                       id={skill.id}
                     />
-                    <span className="text-sm italic text-center uppercase text-secondary dark:text-primary">
+                    <span className="text-sm italic text-center uppercase font-extralight text-secondary dark:text-primary">
                       {skill.name}
                     </span>
                   </li>

@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpened, setIsOpened] = useState(false);
 
   return (
-    <header className="w-full bg-transparent shadow-sm font-pat text-secondary dark:text-primary">
+    <header className="w-full bg-transparent shadow-sm font-lexend text-secondary dark:text-primary">
       {/* :DESKTOP MENU */}
       <div className="flex items-center justify-between p-5 mx-auto">
         {/* >> Site logo and Name */}
@@ -18,18 +18,20 @@ const Navbar = () => {
               alt="logo-geoffreyemerit"
               className="flex w-10 h-10 bg-tertiary md:mb-0"
             />
-            <span className="flex flex-col ml-1 text-base font-bold">
+            <span className="flex flex-col ml-1 text-base font-regular">
               Geoffrey Emerit
-              <span className="text-sm"> Web développeur</span>
+              <span className="text-sm font-light"> Web développeur</span>
             </span>
           </div>
         </NavLink>
         {/* >> Navbar */}
-        <nav className="flex-wrap items-center justify-center hidden text-lg tracking-wide md:ml-auto md:flex">
+        <nav className="flex-wrap items-center justify-center hidden text-lg tracking-wide md:ml-auto lg:flex">
           <ul className="flex">
             {navLinks.map((link) => (
               <NavLink key={link.id} to={link.path}>
-                <li className="mr-10 hover:text-tertiary">{link.title}</li>
+                <li className="mr-10 duration-300 hover:text-tertiary">
+                  {link.title}
+                </li>
               </NavLink>
             ))}
           </ul>
@@ -40,7 +42,7 @@ const Navbar = () => {
         {!isOpened ? (
           <button
             type="button"
-            className="rounded-md md:hidden"
+            className="rounded-md lg:hidden"
             onClick={() => setIsOpened(!isOpened)}
           >
             <Logo
@@ -52,7 +54,7 @@ const Navbar = () => {
         ) : (
           <button
             type="button"
-            className="rounded-md md:hidden"
+            className="rounded-md lg:hidden"
             onClick={() => setIsOpened(!isOpened)}
           >
             <Logo
@@ -66,7 +68,7 @@ const Navbar = () => {
 
       {/* :MOBILE MENU */}
       {isOpened && (
-        <div className="flex flex-col w-full px-3 py-4 text-base font-semibold text-center uppercase text-secondary bg-primary bg-opacity-70 md:hidden dark:bg-secondary dark:bg-opacity-70 dark:text-primary">
+        <div className="absolute z-30 flex flex-col w-full px-3 py-4 text-base font-semibold text-center uppercase text-secondary bg-primary lg:hidden dark:bg-secondary dark:text-primary">
           <ul>
             {navLinks.map((link) => (
               <NavLink key={link.id} to={link.path}>

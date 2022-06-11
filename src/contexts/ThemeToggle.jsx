@@ -6,13 +6,13 @@ const Toggle = ({ mode }) => {
   // >> STATES & SETTERS
   const { setTheme } = useContext(ThemeContext);
   return (
-    <div className="p-2 transition duration-500 ease-in-out rounded-full">
+    <div>
       {/* >> ICONS DARK/LIGHT MODE */}
       {mode === "dark" ? (
         <button
           type="button"
           onClick={() => setTheme("light")}
-          className="hover:scale-[1.02] tracking-[0.5rem] w-52 h-14 text-3xl uppercase border-2 rounded cursor-pointer border-primary text-secondary bg-primary bg-opacity-50 lg:hover:bg-opacity-80"
+          className="tracking-[0.5rem] w-[50vw] h-screen text-5xl uppercase text-secondary"
         >
           NOIR
         </button>
@@ -20,7 +20,7 @@ const Toggle = ({ mode }) => {
         <button
           type="button"
           onClick={() => setTheme("dark")}
-          className="hover:scale-[1.02] tracking-[0.5rem] w-52 h-14 text-3xl uppercase border-2 rounded cursor-pointer border-secondary text-primary bg-secondary bg-opacity-50 lg:hover:bg-opacity-80"
+          className="tracking-[0.5rem] w-[50vw] h-screen text-5xl uppercase text-secondary"
         >
           BLANC
         </button>

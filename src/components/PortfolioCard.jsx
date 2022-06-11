@@ -3,19 +3,24 @@ import PropTypes from "prop-types";
 
 const PortfolioCard = ({ id, title, intro, setModalToOpen }) => {
   return (
-    <div>
+    <div className="m-2 duration-300 hover:scale-105">
       <button
         type="submit"
         id={id}
-        className="cursor-pointer transition duration-300 ease-in-out hover:scale-[1.02]"
+        className="relative flex flex-col w-full cursor-pointer"
         onClick={() => setModalToOpen(id)}
       >
-        <h3 className="font-bold underline sm:text-lg md:text-xl lg:text-2xl text-primary dark:text-secondary">
-          {title}
-        </h3>
-        <p className="py-1 text-xs italic leading-snug tracking-wide text-opacity-100 lg:text-lg text-primary dark:text-secondary">
-          {intro}
-        </p>
+        <div className="w-full h-full  rounded-xl">
+          <h3 className="self-center underline font-regular sm:text-lg md:text-xl lg:text-2xl text-primary dark:text-secondary">
+            {title}
+          </h3>
+          <p className="py-1 text-xs italic font-light leading-snug tracking-wide lg:text-lg text-primary dark:text-secondary">
+            {intro}
+          </p>
+        </div>
+        <div className="self-end text-xs italic underline sm:text-base text-primary dark:text-secondary">
+          + d&apos;infos
+        </div>
       </button>
     </div>
   );

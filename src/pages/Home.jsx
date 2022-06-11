@@ -3,7 +3,7 @@ import HomePage from "../components/HomePage";
 
 const Home = () => {
   return (
-    <div className="font-pat homeBlack dark:homeWhite">
+    <div className="font-lexend homeBlack dark:homeWhite">
       <HomePage />
     </div>
   );

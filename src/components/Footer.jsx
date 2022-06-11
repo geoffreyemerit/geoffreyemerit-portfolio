@@ -7,18 +7,17 @@ const Footer = () => {
     <footer className="flex flex-col p-4 font-pat bg-opacity-30 text-secondary bg-primary sm:flex-row sm:items-center dark:text-primary dark:bg-secondary dark:bg-opacity-30">
       {/* :FOOTER */}
       {/* >> Social Networks */}
-      <ul className="flex flex-wrap justify-between w-full">
+      <ul className="flex flex-wrap justify-center w-full">
         {footLinks.map((link) => (
-          <li key={link.id} className="m-2 sm:m-4 hover:text-tertiary">
+          <li
+            key={link.id}
+            className="m-1 duration-500 sm:m-3 hover:text-tertiary"
+          >
             <a href={link.href} target={link.target}>
-              <Logo myStyle="w-6 h-6" name={link.name} id={link.id} />
+              <Logo myStyle="w-6 h-6 mx-2" name={link.name} id={link.id} />
             </a>
           </li>
         ))}
-        {/* >> Copyright */}
-        <li className="flex items-center m-2 text-base sm:m-4">
-          &copy; Geoffrey Emerit
-        </li>
       </ul>
     </footer>
   );
