@@ -2,7 +2,8 @@ const portfolioArray = [
   {
     id: 0,
     title: "Jason et la toison d'or",
-    intro: "Projet personnel: Création de mon premier site web en autodidacte.",
+    intro:
+      "Entraînement personnel: Création de mon premier site web en autodidacte.",
     date: "Février 2022",
     images: [
       "./assets/portfolio/jason1.png",
@@ -61,7 +62,7 @@ const portfolioArray = [
       "./assets/portfolio/sqp2.png",
       "./assets/portfolio/sqp3.png",
     ],
-    desc: "Premier hackathon de 36h autour d'un thème ... l'écologie. Nous étions 4 étudiants pour développer Sauve Qui Peut, site web fictif de NFT au profit d'associations qui protègent notre planète. (Format desktop uniquement).",
+    desc: "Premier hackathon de 36h autour d'un thème ... l'écologie. Nous étions 4 étudiants pour développer Sauve Qui Peut, site web fictif de NFT au profit d'associations qui protègent notre planète. Une belle victoire à la clé face à plusieurs projets sur la même thématique. (Format desktop uniquement).",
     techs: ["./assets/portfolio/react.png", "./assets/portfolio/tailwind.png"],
     link: "https://sauvequipeut.vercel.app/",
     color: "#A7D570",
