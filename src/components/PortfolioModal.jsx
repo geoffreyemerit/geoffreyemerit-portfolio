@@ -23,14 +23,14 @@ const PortfolioModal = ({
 }) => {
   return (
     // : MODAL DECORATION
-    <div className="z-[20] fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-screen h-screen flex justify-center items-center backdrop-blur-[2px] bg-primary bg-opacity-10">
+    <div className="z-[20]  fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-screen h-screen flex justify-center items-center backdrop-blur-[2px] bg-primary bg-opacity-50">
       <div
-        className={`flex flex-col border-2 border-[${color}] bg-[${color}] w-[80%] h-[80%] sm:w-[70%] sm:h-[90%] lg:w-[60%] rounded-2xl animate-modalSlideIn modal-shadow`}
+        className={`flex neumorphismbloc flex-col border-2 border-[${color}] bg-[${color}] w-[80%] h-[80%] sm:w-[70%] sm:h-[90%] lg:w-[60%] rounded-2xl animate-modalSlideIn`}
       >
         {/* :SECTION 1 */}
         {/* >> Carousel */}
         <Swiper
-          className="flex flex-col w-full bg-blue-400 h-[40%] sm:h-[50%] lg:h-[55%] rounded-2xl "
+          className="flex flex-col w-full h-[40%] sm:h-[50%] lg:h-[55%] rounded-2xl "
           spaceBetween={30}
           loop
           effect="fade"
@@ -59,11 +59,11 @@ const PortfolioModal = ({
             {title}
           </h3>
           {/* >> Date */}
-          <span className="ml-1 text-sm italic text-justify text-primary dark:text-secondary sm:text-lg">
+          <span className="ml-1 text-sm italic font-light text-justify text-primary dark:text-secondary sm:text-lg">
             Effectué en {date}
           </span>
           {/* >> Paragraph */}
-          <p className="my-1 ml-1 mr-3 text-sm tracking-tight text-justify text-primary dark:text-secondary sm:text-xl">
+          <p className="my-1 ml-1 mr-3 text-sm font-light tracking-tight text-justify text-primary dark:text-secondary sm:text-xl">
             {desc}
           </p>
           {/* >> Icons Techs */}
@@ -82,7 +82,7 @@ const PortfolioModal = ({
             <a
               href={link}
               target="_blank"
-              className="flex h-10 mx-2 my-1 items-center uppercase px-6 font-medium text-primary rounded-2xl  bg-opacity-40 border-2 border-primary text-base bg-primary hover:scale-[1.01] dark:border-secondary dark:bg-secondary dark:text-secondary dark:bg-opacity-40 md:text-lg"
+              className="flex items-center h-10 px-6 mx-2 my-1 text-base font-medium uppercase duration-200 border-2 neumorphismfield text-primary rounded-2xl bg-opacity-40 border-primary bg-primary hover:scale-105 dark:border-secondary dark:bg-secondary dark:text-secondary dark:bg-opacity-40 md:text-lg"
               rel="noreferrer"
             >
               Voir site
@@ -91,7 +91,7 @@ const PortfolioModal = ({
             <button
               type="button"
               onClick={() => setModalToOpen(-1)}
-              className="flex justify-end mx-2 my-1 text-3xl text-primary dark:text-secondary hover:scale-105 md:text-4xl"
+              className="flex justify-end mx-2 my-1 text-3xl duration-200 rounded-full neumorphismfield text-primary dark:text-secondary hover:scale-105 md:text-4xl"
             >
               <Logo
                 myStyle="w-10 h-10 text-primary text-opacity-80 dark:text-secondary dark:text-opacity-80"

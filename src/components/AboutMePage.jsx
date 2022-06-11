@@ -24,7 +24,8 @@ const AboutMePage = () => {
               Qui suis-je ?
             </h1>
             {/* >> AboutMe Description */}
-            <span className=" flex items-center w-[90%] h-56 sm:h-[90%] p-4 mt-5 text-sm text-center rounded-xl bg-primary bg-opacity-70 text-secondary sm:text-lg md:text-xl lg:text-2xl tracking-widest dark:bg-secondary dark:bg-opacity-70 dark:text-primary">
+
+            <span className="flex items-center neumorphismbloc font-light w-[90%] h-54 sm:h-[80%] lg:h-[90%] p-4 mt-5 text-sm text-center rounded-xl bg-primary bg-opacity-70 text-secondary md:text-lg lg:text-2xl dark:bg-secondary dark:bg-opacity-70 dark:text-primary">
               {data && data.find((info) => info.id === selected).desc}
             </span>
           </div>
