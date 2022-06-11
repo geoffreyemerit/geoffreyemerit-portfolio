@@ -3,7 +3,7 @@ const aboutMeArray = [
     id: 0,
     name: "Just Me",
     link: "./assets/aboutMe/me.png",
-    desc: `Vous l'aurez compris je suis joueur d'echecs depuis petit ! Hormis cette info... J'ai 28ans, j'habite au Pays Basque et suis maintenant un développeur web junior après plus de 6ans dans l'immobilier. Je souhaite devenir un développeur sur qui on peut compter à 200%.`,
+    desc: `Vous l'aurez compris je suis joueur d'echecs depuis tout petit ! Hormis cette info... J'ai 28 ans, j'habite au Pays Basque et je suis maintenant un développeur web junior après plus de 6 ans dans l'immobilier. Je souhaite devenir un développeur sur qui on peut compter à 200%.`,
   },
   {
     id: 1,
@@ -15,7 +15,7 @@ const aboutMeArray = [
     id: 2,
     name: "En formation",
     link: "./assets/aboutMe/enformation.jpg",
-    desc: "J'ai choisi la Wild Code School pour démarrer cette folle aventure. Chaque jour j'apprend de nouvelles choses et j'adore ça ! Je ne vois pas les heures passer quand je code, j'ai l'envie de progresser et d'apprendre toujours plus.",
+    desc: "J'ai choisi la Wild Code School pour démarrer cette folle aventure. Chaque jour j'apprends de nouvelles choses et j'adore ça ! Je ne vois pas les heures passer quand je code, j'ai l'envie de progresser et d'apprendre toujours plus.",
   },
   {
     id: 3,

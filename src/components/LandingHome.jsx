@@ -25,13 +25,13 @@ const LandingHome = () => {
           <Typist.Delay ms={500} />
           <h2 className="z-10 w-[95%] absolute translate-x-[-50%] translate-y-[-50%] left-[50%] top-[50%] lg:w-[55rem] uppercase lg:-translate-x-[50%] lg:-translate-y-[50%] lg:top-[20%] lg:left-[50%] flex flex-col">
             <span className="z-10 flex justify-center self-center sm:tracking-widest pb-3 text-[1.4rem] w-[90%] text-secondary text-center sm:text-[2rem] lg:text-[2rem] uppercase">
-              Bienvenue
+              Bienvenue !
             </span>
             <span className="z-10 flex justify-center self-center sm:tracking-widest pb-3 text-[1.4rem] w-[90%] text-secondary text-center sm:text-[2rem] lg:text-[2rem] uppercase">
-              La partie peut commencer
+              La partie va commencer
             </span>
             <span className="z-10 flex justify-center self-center sm:tracking-widest pb-3 text-[1.4rem] w-full text-secondary text-center sm:text-[2rem] lg:text-[2rem] uppercase">
-              choisis ton camp !
+              Choisis ton camp
             </span>
           </h2>
         </Typist>
