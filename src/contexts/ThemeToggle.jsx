@@ -12,7 +12,7 @@ const Toggle = ({ mode }) => {
         <button
           type="button"
           onClick={() => setTheme("light")}
-          className="tracking-[0.5rem] w-[50vw] h-screen text-5xl uppercase text-secondary"
+          className="tracking-[0.5rem] h-[26rem] w-screen lg:w-[50vw] lg:h-screen text-5xl uppercase text-secondary"
         >
           NOIR
         </button>
@@ -20,7 +20,7 @@ const Toggle = ({ mode }) => {
         <button
           type="button"
           onClick={() => setTheme("dark")}
-          className="tracking-[0.5rem] w-[50vw] h-screen text-5xl uppercase text-secondary"
+          className="tracking-[0.5rem] h-[26rem] w-screen lg:w-[50vw] lg:h-screen text-5xl uppercase text-secondary"
         >
           BLANC
         </button>
