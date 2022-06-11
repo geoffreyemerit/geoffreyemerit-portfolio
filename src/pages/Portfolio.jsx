@@ -5,7 +5,7 @@ import PortfolioPage from "../components/PortfolioPage";
 
 const Portfolio = () => {
   return (
-    <div className="min-h-screen font-pat portfolioBlack dark:portfolioWhite">
+    <div className="min-h-screen font-lexend portfolioBlack dark:portfolioWhite">
       <Navbar />
       <PortfolioPage />
       <Footer />

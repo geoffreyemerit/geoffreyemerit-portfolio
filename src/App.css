@@ -1,18 +1,4 @@
-@font-face {
-  font-family: "Montserrat";
-  src: local("Monserrat"),
-    url("/assets/fonts/Monserrat-SemiBold.ttf") format("ttf");
-}
-@font-face {
-  font-family: "Raleway";
-  src: local("Raleway"), url("/assets/fonts/Raleway-Regular.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: "Patrick Hand";
-  src: local("Patrick Hand"),
-    url("/assets/fonts/PatrickHand-Regular.ttf") format("ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;400;700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -31,16 +17,6 @@
   .text-shadow-none {
     text-shadow: none;
   }
-  .text-shadow-b {
-    text-shadow: 4px 3px 4px black;
-  }
-  .text-shadow-w {
-    text-shadow: 4px 3px 4px grey;
-  }
-  .text-shadow-y {
-    text-shadow: #fbc706 1px 1px, #fbc706 -1px 1px, #fbc706 -1px -1px,
-      #fbc706 1px -1px;
-  }
   .text-shadow-nn {
     text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px;
   }
@@ -50,44 +26,140 @@
   .modal-shadow {
     box-shadow: 0px 0px 0px 1000px rgb(0, 0, 0, 0.5), 0px 0px 25px black;
   }
+  .neumorphismbloc {
+    box-shadow: inset -3px -3px 7px #ffffff73,
+      inset 3px 3px 5px rgba(18, 18, 19, 0.288);
+  }
+  .neumorphismfield {
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(18, 18, 19, 0.288);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .neumorphismbutton {
+    border-radius: 25px;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(18, 18, 19, 0.288);
+  }
   .title {
-    @apply font-pat w-44 text-base sm:w-52 h-14 text-shadow-b sm:text-lg tracking-[0.2rem] uppercase border-2 rounded border-tertiary text-tertiary bg-primary bg-opacity-80 dark:text-primary dark:bg-secondary dark:bg-opacity-80 dark:border-primary;
+    @apply font-lexend font-bold text-base px-6 py-3 sm:text-lg tracking-[0.2rem] uppercase border-[1px] rounded border-tertiary text-tertiary bg-primary bg-opacity-80 dark:text-primary dark:bg-secondary dark:bg-opacity-80 dark:border-primary;
   }
   .landingBlack {
-    @apply bg-no-repeat bg-cover bg-landingBlack;
+    background: linear-gradient(
+        180deg,
+        rgb(28 28 28 /62%) 0%,
+        rgb(25 25 25 /60%) 100%
+      ),
+      url(/assets/backgrounds/bg-landing-black.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .landingWhite {
-    @apply bg-no-repeat bg-cover bg-landingWhite;
+    background: linear-gradient(
+        180deg,
+        rgb(28 28 28 /62%) 0%,
+        rgb(25 25 25 /60%) 100%
+      ),
+      url(/assets/backgrounds/bg-landing-white.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .homeBlack {
-    @apply h-full bg-no-repeat bg-cover bg-homeBlack;
+    background: linear-gradient(
+        180deg,
+        rgb(28 28 28 /35%) 0%,
+        rgb(25 25 25 /25%) 100%
+      ),
+      url(/assets/backgrounds/bg-home-black.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .homeWhite {
-    @apply h-full bg-no-repeat bg-cover bg-homeWhite;
+    background: linear-gradient(
+        180deg,
+        rgb(240 240 240 /30%) 0%,
+        rgb(245 245 245 /20%) 100%
+      ),
+      url(/assets/backgrounds/bg-home-white.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .aboutMeBlack {
-    @apply h-full bg-[#3C3C3C] bg-no-repeat bg-cover bg-aboutMeBlack;
+    background: linear-gradient(
+        180deg,
+        rgb(28 28 28 /35%) 0%,
+        rgb(25 25 25 /25%) 100%
+      ),
+      url(/assets/backgrounds/bg-aboutme-black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .aboutMeWhite {
-    @apply h-full bg-no-repeat bg-cover bg-aboutMeWhite;
+    background: linear-gradient(
+        180deg,
+        rgb(240 240 240 /30%) 0%,
+        rgb(245 245 245 /20%) 100%
+      ),
+      url(/assets/backgrounds/bg-aboutme-white.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .skillsBlack {
-    @apply h-full bg-[#040404] bg-no-repeat bg-auto sm:bg-cover bg-skillsBlack;
+    background: linear-gradient(
+        180deg,
+        rgb(28 28 28 /35%) 0%,
+        rgb(25 25 25 /25%) 100%
+      ),
+      url(/assets/backgrounds/bg-skills-black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .skillsWhite {
-    @apply bg-no-repeat bg-cover bg-skillsWhite;
+    background: linear-gradient(
+        180deg,
+        rgb(240 240 240 /30%) 0%,
+        rgb(245 245 245 /20%) 100%
+      ),
+      url(/assets/backgrounds/bg-skills-white.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .portfolioBlack {
-    @apply h-full bg-[#040404] bg-no-repeat bg-auto sm:bg-cover bg-portfolioBlack;
+    background: linear-gradient(
+        180deg,
+        rgb(28 28 28 /35%) 0%,
+        rgb(25 25 25 /25%) 100%
+      ),
+      url(/assets/backgrounds/bg-portfolio-black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .portfolioWhite {
-    @apply h-full bg-[#040404] bg-no-repeat bg-auto sm:bg-cover bg-portfolioWhite;
+    background: linear-gradient(
+        180deg,
+        rgb(240 240 240 /30%) 0%,
+        rgb(245 245 245 /20%) 100%
+      ),
+      url(/assets/backgrounds/bg-portfolio-white.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .contactBlack {
-    @apply h-full bg-[#040404] bg-no-repeat bg-auto sm:bg-cover bg-contactBlack;
+    background: linear-gradient(
+        180deg,
+        rgb(28 28 28 /35%) 0%,
+        rgb(25 25 25 /25%) 100%
+      ),
+      url(/assets/backgrounds/bg-contact-black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .contactWhite {
-    @apply bg-no-repeat bg-cover bg-contactWhite;
+    background: linear-gradient(
+        180deg,
+        rgb(240 240 240 /30%) 0%,
+        rgb(245 245 245 /20%) 100%
+      ),
+      url(/assets/backgrounds/bg-contact-white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 .swiper-button-next::after,
