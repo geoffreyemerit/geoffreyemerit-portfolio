@@ -20,7 +20,7 @@ const Navbar = () => {
             />
             <span className="flex flex-col ml-1 text-base font-regular">
               Geoffrey Emerit
-              <span className="text-sm font-light"> Web développeur</span>
+              <span className="text-sm font-light">Développeur Web</span>
             </span>
           </div>
         </NavLink>
