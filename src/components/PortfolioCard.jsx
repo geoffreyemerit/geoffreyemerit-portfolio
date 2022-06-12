@@ -10,7 +10,7 @@ const PortfolioCard = ({ id, title, intro, setModalToOpen }) => {
         className="relative flex flex-col w-full cursor-pointer"
         onClick={() => setModalToOpen(id)}
       >
-        <div className="w-full h-full  rounded-xl">
+        <div className="w-full h-full rounded-xl">
           <h3 className="self-center underline font-regular sm:text-lg md:text-xl lg:text-2xl text-primary dark:text-secondary">
             {title}
           </h3>
