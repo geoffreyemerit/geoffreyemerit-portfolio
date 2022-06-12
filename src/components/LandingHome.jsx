@@ -5,7 +5,7 @@ import Toggle from "../contexts/ThemeToggle";
 
 const LandingHome = () => {
   return (
-    <section className="flex flex-col h-screen font-lexend font-regular lg:flex-row ">
+    <section className="flex flex-col h-screen  font-lexend font-regular lg:flex-row">
       {/* :LANDING PAGE */}
       <div>
         {/* >> Logo */}
@@ -17,7 +17,7 @@ const LandingHome = () => {
           />
           <span className="flex flex-col ml-1 text-base font-regular text-secondary">
             Geoffrey Emerit
-            <span className="text-sm font-light"> Web développeur</span>
+            <span className="text-sm font-light">Développeur Web</span>
           </span>
         </div>
         {/* >> Title */}
