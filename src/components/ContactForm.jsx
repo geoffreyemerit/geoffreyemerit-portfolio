@@ -20,6 +20,8 @@ const ContactForm = () => {
           ensemble ?
         </p>
         <form
+          method="POST"
+          action="https://getform.io/f/3383e218-0320-4427-8d1e-9cc35b6ea386"
           autoComplete="none"
           className="relative flex flex-col flex-wrap my-10 px-5 py-5 justify-center rounded-3xl w-[80%] sm:w-[60%] lg:w-[35%] neumorphismbloc bg-primary dark:bg-secondary bg-opacity-20 dark:bg-opacity-20"
         >
