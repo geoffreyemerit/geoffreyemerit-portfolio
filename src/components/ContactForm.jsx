@@ -28,7 +28,8 @@ const ContactForm = () => {
           {/* >> Name */}
           <div className="relative z-0 flex flex-row m-3">
             <input
-              type="name"
+              type="text"
+              name="nom"
               id="floating_Name"
               autoComplete="none"
               required="required"
@@ -40,6 +41,7 @@ const ContactForm = () => {
           <div className="relative z-0 flex flex-row m-3">
             <input
               type="email"
+              name="email"
               id="floating_email"
               autoComplete="none"
               required="required"
@@ -51,6 +53,7 @@ const ContactForm = () => {
           <div className="relative z-0 flex flex-row m-3">
             <input
               type="tel"
+              name="number"
               pattern="[0-9]{10}"
               id="floating_number"
               autoComplete="none"
@@ -63,6 +66,8 @@ const ContactForm = () => {
           <div className="relative z-0 flex flex-row m-3">
             <textarea
               type="text"
+              name="message"
+              rows="10"
               id="floating_message"
               autoComplete="off"
               required="required"
