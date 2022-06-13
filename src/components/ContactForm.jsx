@@ -28,10 +28,11 @@ const ContactForm = () => {
           {/* >> Name */}
           <div className="relative z-0 flex flex-row m-3">
             <input
-              type="name"
+              type="text"
+              name="nom"
               id="floating_Name"
               autoComplete="none"
-              required="required"
+              required
               placeholder="NOM*"
               className="cursor-pointer duration-500 ease-in neumorphismfield rounded-md w-full pl-3 py-2.5 text-base text-secondary dark:text-primary bg-transparent dark:border-secondary appearance-none focus:outline-none focus:ring-0 focus:border-tertiary dark:focus:border-secondary placeholder:text-secondary dark:placeholder:text-primary"
             />
@@ -40,9 +41,10 @@ const ContactForm = () => {
           <div className="relative z-0 flex flex-row m-3">
             <input
               type="email"
+              name="email"
               id="floating_email"
               autoComplete="none"
-              required="required"
+              required
               placeholder="EMAIL*"
               className="cursor-pointer duration-500 ease-in neumorphismfield rounded-md w-full pl-3 py-2.5 text-base text-secondary dark:text-primary bg-transparent dark:border-secondary appearance-none focus:outline-none focus:ring-0 focus:border-tertiary dark:focus:border-secondary placeholder:text-secondary dark:placeholder:text-primary"
             />
@@ -51,10 +53,11 @@ const ContactForm = () => {
           <div className="relative z-0 flex flex-row m-3">
             <input
               type="tel"
+              name="number"
               pattern="[0-9]{10}"
               id="floating_number"
               autoComplete="none"
-              required="required"
+              required
               placeholder="TÉLÉPHONE*"
               className="cursor-pointer duration-500 ease-in neumorphismfield rounded-md w-full pl-3 py-2.5 text-base text-secondary dark:text-primary bg-transparent dark:border-secondary appearance-none focus:outline-none focus:ring-0 focus:border-tertiary dark:focus:border-secondary placeholder:text-secondary dark:placeholder:text-primary"
             />
@@ -63,9 +66,11 @@ const ContactForm = () => {
           <div className="relative z-0 flex flex-row m-3">
             <textarea
               type="text"
+              name="message"
+              rows="10"
               id="floating_message"
               autoComplete="off"
-              required="required"
+              required
               className="cursor-pointer duration-500 ease-in neumorphismfield rounded-md w-full h-40 pl-3 py-2.5 text-base text-secondary dark:text-primary bg-transparent dark:border-secondary appearance-none focus:outline-none focus:ring-0 focus:border-tertiary dark:focus:border-secondary placeholder:text-secondary dark:placeholder:text-primary"
               placeholder="MESSAGE"
             />
