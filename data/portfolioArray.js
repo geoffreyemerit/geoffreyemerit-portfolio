@@ -73,8 +73,13 @@ const portfolioArray = [
     intro:
       "Troisième projet: Création du site web d'un restaurant à Biarritz (64).",
     date: "Juin / Juillet 2022",
-    images: ["./assets/portfolio/cs.png"],
-    desc: "Troisième projet d'une durée de 8 semaines. Une équipe de 4 étudiants qui développe le site web d'un restaurant qui a ouvert ses portes le 21 juin 2022 sur Biarrtz (64).",
+    images: [
+      "./assets/portfolio/cs1.png",
+      "./assets/portfolio/cs2.png",
+      "./assets/portfolio/cs3.png",
+      "./assets/portfolio/cs4.png",
+    ],
+    desc: "Troisième projet d'une durée de 8 semaines. Une équipe de 4 étudiants qui développe le site web d'un restaurant qui a ouvert ses portes le 21 juin 2022 sur Biarritz (64).",
     techs: [
       "./assets/portfolio/react.svg",
       "./assets/portfolio/sass.svg",
