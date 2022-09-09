@@ -167,6 +167,30 @@ const PortfolioPage = () => {
                 )}
               </div>
             </div>
+
+            {/* <!-- right timeline --> */}
+            {/* <!-- line + logo --> */}
+            <div className="mx-[50%] neumorphismbutton h-20 rounded-xl border-[2px] border-opacity-80 border-[#0fc8ff]" />
+            <div className="flex items-center justify-between w-full mb-8 right-timeline">
+              <div className="order-1 w-5/12" />
+              <div className="z-10 neumorphismbutton flex items-center justify-center order-1 w-12 h-12 sm:w-16 sm:h-16 ml-2 my-5 bg-[#0fc8ff] bg-opacity-80 rounded-full shadow-xl">
+                <Logo
+                  myStyle="w-7 h-7 sm:w-10 sm:h-10 text-primary dark:text-secondary"
+                  name="logos-interrogation"
+                  id="logos-interrogation"
+                />
+              </div>
+              {/* <!-- Card --> */}
+              <div className="order-1 cursor-pointer neumorphismfield border-[1px] border-primary flex justify-center items-center w-5/12 ml-2 sm:px-6 bg-[#0fc8ff] bg-opacity-80 rounded-lg shadow-xl">
+                {portfolioArray && (
+                  <PortfolioCard
+                    {...portfolioArray[6]}
+                    setModalToOpen={setModalToOpen}
+                  />
+                )}
+              </div>
+            </div>
+
             <div className="mx-[50%] neumorphismbutton h-20 rounded-xl border-[2px] border-opacity-80 border-[#56AAD0] mb-10" />
           </div>
         </div>
