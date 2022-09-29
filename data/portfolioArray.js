@@ -62,7 +62,7 @@ const portfolioArray = [
       "./assets/portfolio/sqp2.png",
       "./assets/portfolio/sqp3.png",
     ],
-    desc: "Premier hackathon de 36h autour d'un thème ... l'écologie. Nous étions 4 étudiants pour développer Sauve Qui Peut, site web fictif de NFT au profit d'associations qui protègent notre planète. Une belle victoire à la clé face à plusieurs projets sur la même thématique. (Format desktop uniquement).",
+    desc: "(Desktop Only) Premier hackathon de 36h sur l'écologie. Nous étions 4 étudiants pour créer ce site fictif de vente de NFT pour protéger notre planète. Une belle victoire finale face aux autres projets.",
     techs: ["./assets/portfolio/react.svg", "./assets/portfolio/tailwind.svg"],
     link: "https://sauvequipeut.vercel.app/",
     color: "#A7D570",
